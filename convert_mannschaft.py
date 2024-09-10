@@ -4,20 +4,24 @@ import argparse
 # Export from Lodur with these fields: 
 # Name, Vorname, Email, Alarmgruppen, Funktionen, Gruppe, Grad
 
-###################################
+###################################################################################
 # Zur Nutzung:
 # - Daten von Lodur exportieren (unter Mannschaftslisten, dann Tab 'Info' oben)
-# - folgende Felder exportieren:
+# - folgende Felder auswählen:
 #   Name, Vorname, Email, Alarmgruppen, Funktionen, Gruppe, Grad
+# - als CSV exportieren
 # - Script anpassen
 #   - Variablen input_file und output_file anpassen
 #   - Feldlisten für Alarmgruppen und Funktionen anpassen, ggf. Logik anpassen
 # - ausführen in Terminal (ev. in WSL): python convert_mannschaft.py
 # 
+# Weitere Infos:
 # - Script kann mit --test ausgeführt werden, um die Email-Adressen so anzupassen,
 #   dass keine Emails versandt werden (@example.com)
+# - Teilweise gibt es Probleme mit Umlauten. Mit der Anpassung des Encoding der
+#   Dateien kann das gelöst werden
 #
-##################################
+###################################################################################
 
 
 # Input and output file paths
