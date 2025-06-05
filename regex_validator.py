@@ -13,7 +13,7 @@ from java.util.regex import Pattern
 pattern = r'\d\d\.\d\d\.\d\d\d\d \d\d\:\d\d\; ((Nachalarmierung), )?(.*?)?, (?:(?:in (.*?))|Lenzburg|FW Seon-Egliswil),(\s+(.*?),)?\s*(.*)'
 
 # Define the examples and expected group values
-# Useful for testing: https://regex101.com/ (choose Java as Regex Engine)
+# Useful for testing: https://regex101.com/?flavor=java
 examples = [
     ('15.01.2023 16:08; BMA, in Seon, Oberdorfstrasse 33, Stiftung ABC, Hauptgebäude,',                                              ['BMA',                    'Seon',             'Oberdorfstrasse 33',    'Stiftung ABC, Hauptgebäude,']),
     ('06.02.2021 14:21; Brand-Mittel, in Seon, Hansligasse 432, Holzstapel',                                                         ['Brand-Mittel',           'Seon',             'Hansligasse 432',       'Holzstapel']),
