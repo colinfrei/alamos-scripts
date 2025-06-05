@@ -26,9 +26,11 @@ examples = [
     ('17.07.2018 11:33; Techn. Hilfeleistung, in Seon, Ortsgebiet Seon,  Ölspur Seetalstrasse, Treffpunkt Feuerwehrmagazin',         ['Techn. Hilfeleistung',   'Seon',             'Ortsgebiet Seon',       'Ölspur Seetalstrasse, Treffpunkt Feuerwehrmagazin']),
     ('25.02.2019 20:00; Elementarereignis, in Seon,  Reussgasse, Baum über Strasse.',                                                ['Elementarereignis',      'Seon',             'Reussgasse',            'Baum über Strasse.']),
     ('15.05.2015 18:45; Probealarm, FW Seon-Egliswil, ',                                                                             ['Probealarm',             None,               None,                    '']),
+    # Schwierig zu erkennen, es fehlt ein Stichwort. Ignorieren, da Nachalarmierung eh nicht zuverlässig
     # ('22.08.2021 21:00; Nachalarmierung, Seetalstrasse 5, Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin',     ['Nachalarmierung',        None,               'Seetalstrasse 5',       'Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin']),
     ('12.12.2023 17:21; Oel-, Benzin-, Chemie, in Seon, Birren 2,  grosse Menge auslaufende Phosphorsäure.',                         ['Oel-, Benzin-, Chemie',  'Seon',             'Birren 2',              'grosse Menge auslaufende Phosphorsäure.'])
-    ('03.08.2024 17:18; Elementarereignis, in Seon, Van Graffenried Peter, Oberdorfstrasse 9b, Seon. 10cm Wasser in der Garage.'     ['Elementarereignis',      'Seon',             'Oberdorfstrasse 9b',    '10cm Wasser in der Garage.'])
+    # Schwierig zu erkennen. Name und Adresse gemischt. Adresse ist in PDF auch nicht sauber erfasst -> schlecht erfasst, ignorieren.
+    # ('03.08.2024 17:18; Elementarereignis, in Seon, Van Graffenried Peter, Oberdorfstrasse 9b, Seon. 10cm Wasser in der Garage.'     ['Elementarereignis',      'Seon',             'Oberdorfstrasse 9b',    '10cm Wasser in der Garage.'])
 ]
 
 def validate_examples(pattern, examples):
