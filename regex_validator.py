@@ -11,7 +11,7 @@ examples = [
     ('15.01.2023 16:08; BMA, in Seon, Oberdorfstrasse 33, Stiftung ABC, Hauptgebäude,', ['BMA', 'Seon', 'Oberdorfstrasse 33', 'Stiftung ABC, Hauptgebäude,']),
     ('06.02.2021 14:21; Brand-Mittel, in Seon, Hansligasse 432, Holzstapel', ['Brand-Mittel', 'Seon', 'Hansligasse 432', 'Holzstapel']),
     ('08.06.2023 15:06; Nachalarmierung, in Seon, Holdernweg, EFH,  Einrücken ins Magazin', ['Nachalarmierung', 'Seon', 'Holdernweg', 'EFH,  Einrücken ins Magazin']),
-    ('24.03.2021 20:50; Nachalarmierung, Verkehrsregelung, in Lenzburg - Seon, bei FW Lenzburg Muster Hans melden.', ['Verkehrsregelung', 'Seon', 'bei FW Lenzburg Muster Hans melden']),
+    ('24.03.2021 20:50; Nachalarmierung, Verkehrsregelung, in Lenzburg - Seon, bei FW Lenzburg Muster Hans melden.', ['Verkehrsregelung', 'Lenzburg - Seon', 'bei FW Lenzburg Muster Hans melden']),
     ('07.02.2022 21:49; Brand-Gross, in Seon, Seetalstrasse, vis-à-vis Landi,  Brand in grossem leerstehenden Gebäude', ['Brand-Gross', 'Seon', 'Seetalstrasse', 'vis-à-vis Landi,  Brand in grossem leerstehenden Gebäude']),
     ('09.04.2023 08:01; Brand-Klein, in Seon, Ortsgebiet Seon,  PW-Barand zwischen Hallwil und Seon', ['Brand-Klein', 'Seon', 'Ortsgebiet Seon', 'PW-Barand zwischen Hallwil und Seon']),
     ('06.06.2006 16:36; Abklärung, in Egliswil, Schulstrasse 2, 06 Schule,  ', ['Abklärung', 'Egliswil', 'Schulstrasse 2', '06 Schule,  ']),
