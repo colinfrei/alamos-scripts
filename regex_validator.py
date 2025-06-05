@@ -6,6 +6,7 @@ import re
 pattern = r'\d\d\.\d\d\.\d\d\d\d \d\d\:\d\d\; ((Nachalarmierung), )?(.*?)?, (?:(?:in (.*?))|Lenzburg|FW Seon-Egliswil),( (.*?),)? ?(.*)'
 
 # Define the examples and expected group values
+# Expected Groups: Stichwort, Ort, Strasse, Text
 examples = [
     ('15.01.2023 16:08; BMA, in Seon, Oberdorfstrasse 33, Stiftung ABC, Hauptgebäude,', ['BMA', 'Seon', 'Oberdorfstrasse 33', 'Stiftung ABC, Hauptgebäude,']),
     ('06.02.2021 14:21; Brand-Mittel, in Seon, Hansligasse 432, Holzstapel', ['Brand-Mittel', 'Seon', 'Hansligasse 432', 'Holzstapel']),
@@ -19,7 +20,7 @@ examples = [
     ('25.02.2019 20:00; Elementarereignis, in Seon,  Reussgasse, Baum über Strasse.', ['Elementarereignis', 'Seon', 'Reussgasse', 'Baum über Strasse.']),
     ('15.05.2015 18:45; Probealarm, FW Seon-Egliswil, ', ['Probealarm', '', '', '']),
     ('22.08.2021 21:00; Nachalarmierung, Seetalstrasse 5, Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin', ['Nachalarmierung', '', 'Seetalstrasse 5', 'Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin']),
-    ('12.12.2023 17:21; Oel-, Benzin-, Chemie, in Seon, Birren 2,  grosse Menge auslaufende Phosphorsäure.', ['Oel-, Benzin-, Chemie', 'Seon', 'Birren 2', ' grosse Menge auslaufende Phosphorsäure.'])
+    ('12.12.2023 17:21; Oel-, Benzin-, Chemie, in Seon, Birren 2,  grosse Menge auslaufende Phosphorsäure.', ['Oel-, Benzin-, Chemie', 'Seon', 'Birren 2', 'grosse Menge auslaufende Phosphorsäure.'])
 ]
 
 def validate_examples(pattern, examples):
@@ -29,8 +30,8 @@ def validate_examples(pattern, examples):
         match = compiled_pattern.match(example)
         if match:
             groups = match.groups()
-            # Extract the groups you are interested in (ignore 1st, 2nd, 5th in this case)
-            relevant_groups = [groups[2], groups[3], groups[5], groups[6]]  # Adjust indices based on zero-indexing
+            # Extract the groups you are interested in
+            relevant_groups = [groups[3], groups[4], groups[7], groups[8]]  # Adjust indices based on zero-indexing
             if relevant_groups == expected_groups:
                 print(f"'{example}' matches the pattern with correct group values: {relevant_groups}")
             else:
