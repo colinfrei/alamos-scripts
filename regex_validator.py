@@ -3,7 +3,7 @@
 import re
 
 # Define your regex pattern with capture groups
-pattern = r'\d\d\.\d\d\.\d\d\d\d \d\d\:\d\d\; ((Nachalarmierung), )?(.*?)?, in (.*?),( (.*?),)? (.*)'
+pattern = r'\d\d\.\d\d\.\d\d\d\d \d\d\:\d\d\; ((Nachalarmierung), )?(.*?)?, (?:(?:in (.*?))|FW Seon-Egliswil),( (.*?),)? ?(.*)'
 
 # Define the examples and expected group values
 examples = [
