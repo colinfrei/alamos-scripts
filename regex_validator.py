@@ -31,7 +31,7 @@ def validate_examples(pattern, examples):
         if match:
             groups = match.groups()
             # Extract the groups you are interested in
-            relevant_groups = [groups[2], groups[3], groups[5], groups[6]]  # Adjust indices based on zero-indexing
+            relevant_groups = [groups[2], groups[3], groups[5], groups[7]]  # Adjust indices based on zero-indexing
             if relevant_groups == expected_groups:
                 print(f"'{example}' matches the pattern with correct group values: {relevant_groups}")
             else:
