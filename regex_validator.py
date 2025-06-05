@@ -3,7 +3,7 @@
 import re
 
 # Define your regex pattern with capture groups
-pattern = r'\d\d\.\d\d\.\d\d\d\d \d\d\:\d\d\; ((Nachalarmierung), )?(.*?)?, (?:(?:in (.*?))|FW Seon-Egliswil),( (.*?),)? ?(.*)'
+pattern = r'\d\d\.\d\d\.\d\d\d\d \d\d\:\d\d\; ((Nachalarmierung), )?(.*?)?, (?:(?:in (.*?))|Lenzburg|FW Seon-Egliswil),( (.*?),)? ?(.*)'
 
 # Define the examples and expected group values
 examples = [
@@ -18,7 +18,7 @@ examples = [
     ('17.07.2018 11:33; Techn. Hilfeleistung, in Seon, Ortsgebiet Seon,  Ölspur Seetalstrasse, Treffpunkt Feuerwehrmagazin', ['Techn. Hilfeleistung', 'Seon', 'Ortsgebiet Seon', 'Ölspur Seetalstrasse, Treffpunkt Feuerwehrmagazin']),
     ('25.02.2019 20:00; Elementarereignis, in Seon,  Reussgasse, Baum über Strasse.', ['Elementarereignis', 'Seon', 'Reussgasse', 'Baum über Strasse.']),
     ('15.05.2015 18:45; Probealarm, FW Seon-Egliswil, ', ['Probealarm', '', '', '']),
-    ('22.08.2021 21:00; Nachalarmierung, Seetalstrase 5, Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin', ['Nachalarmierung', '', 'Seetalstrasse 5', 'Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin']),
+    ('22.08.2021 21:00; Nachalarmierung, Seetalstrasse 5, Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin', ['Nachalarmierung', '', 'Seetalstrasse 5', 'Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin']),
     ('12.12.2023 17:21; Oel-, Benzin-, Chemie, in Seon, Birren 2,  grosse Menge auslaufende Phosphorsäure.', ['Oel-, Benzin-, Chemie', 'Seon', 'Birren 2', ' grosse Menge auslaufende Phosphorsäure.'])
 ]
 
