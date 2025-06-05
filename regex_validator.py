@@ -1,17 +1,23 @@
-# regex_validator.py
+import jpype
+import jpype.imports
+from jpype.types import *
 
-import re
+# Start the JVM
+if not jpype.isJVMStarted():
+    jpype.startJVM()
 
-# Define your regex pattern with capture groups
+# Import Java classes for regex
+from java.util.regex import Pattern
+
+# Define your regex pattern with capture groups (Java-style)
 pattern = r'\d\d\.\d\d\.\d\d\d\d \d\d\:\d\d\; ((Nachalarmierung), )?(.*?)?, (?:(?:in (.*?))|Lenzburg|FW Seon-Egliswil),( (.*?),)? ?(.*)'
 
 # Define the examples and expected group values
-# Expected Groups: Stichwort, Ort, Strasse, Text
 examples = [
     ('15.01.2023 16:08; BMA, in Seon, Oberdorfstrasse 33, Stiftung ABC, Hauptgebäude,', ['BMA', 'Seon', 'Oberdorfstrasse 33', 'Stiftung ABC, Hauptgebäude,']),
     ('06.02.2021 14:21; Brand-Mittel, in Seon, Hansligasse 432, Holzstapel', ['Brand-Mittel', 'Seon', 'Hansligasse 432', 'Holzstapel']),
     ('08.06.2023 15:06; Nachalarmierung, in Seon, Holdernweg, EFH,  Einrücken ins Magazin', ['Nachalarmierung', 'Seon', 'Holdernweg', 'EFH,  Einrücken ins Magazin']),
-    ('24.03.2021 20:50; Nachalarmierung, Verkehrsregelung, in Lenzburg - Seon, bei FW Lenzburg Muster Hans melden.', ['Verkehrsregelung', 'Lenzburg - Seon', 'bei FW Lenzburg Muster Hans melden']),
+    ('24.03.2021 20:50; Nachalarmierung, Verkehrsregelung, in Lenzburg - Seon, bei FW Lenzburg Muster Hans melden.', ['Verkehrsregelung', 'Lenzburg - Seon', 'bei FW Lenzburg Muster Hans melden', '']),
     ('07.02.2022 21:49; Brand-Gross, in Seon, Seetalstrasse, vis-à-vis Landi,  Brand in grossem leerstehenden Gebäude', ['Brand-Gross', 'Seon', 'Seetalstrasse', 'vis-à-vis Landi,  Brand in grossem leerstehenden Gebäude']),
     ('09.04.2023 08:01; Brand-Klein, in Seon, Ortsgebiet Seon,  PW-Barand zwischen Hallwil und Seon', ['Brand-Klein', 'Seon', 'Ortsgebiet Seon', 'PW-Barand zwischen Hallwil und Seon']),
     ('06.06.2006 16:36; Abklärung, in Egliswil, Schulstrasse 2, 06 Schule,  ', ['Abklärung', 'Egliswil', 'Schulstrasse 2', '06 Schule,  ']),
@@ -24,18 +30,21 @@ examples = [
 ]
 
 def validate_examples(pattern, examples):
-    compiled_pattern = re.compile(pattern)
+    compiled_pattern = Pattern.compile(pattern)
     all_passed = True
     for example, expected_groups in examples:
-        match = compiled_pattern.match(example)
-        if match:
-            groups = match.groups()
-            # Extract the groups you are interested in
-            relevant_groups = [groups[2], groups[3], groups[5], groups[7]]  # Adjust indices based on zero-indexing
-            if relevant_groups == expected_groups:
-                print(f"'{example}' matches the pattern with correct group values: {relevant_groups}")
+        matcher = compiled_pattern.matcher(example)
+        if matcher.matches():
+            groups = [
+                matcher.group(3),  # Stichwort
+                matcher.group(4),  # Ort
+                matcher.group(6),  # Strasse
+                matcher.group(7)   # Text
+            ]
+            if groups == expected_groups:
+                print(f"'{example}' matches the pattern with correct group values: {groups}")
             else:
-                print(f"'{example}' matches the pattern but with incorrect group values: {relevant_groups}")
+                print(f"'{example}' matches the pattern but with incorrect group values: {groups}")
                 all_passed = False
         else:
             print(f"'{example}' does NOT match the pattern.")
@@ -46,3 +55,6 @@ def validate_examples(pattern, examples):
 
 if __name__ == "__main__":
     validate_examples(pattern, examples)
+
+# Shutdown the JVM after execution
+jpype.shutdownJVM()
