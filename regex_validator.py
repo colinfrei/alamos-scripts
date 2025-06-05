@@ -20,6 +20,7 @@ examples = [
     ('15.05.2015 18:45; Probealarm, FW Seon-Egliswil, ', ['Probealarm', '', '', ''])
     ('22.08.2021 21:00; Nachalarmierung, Seetalstrase 5, Lenzburg, Atemschutz Modul 5, ADL Brandbekämpfung, Einrücken Magazin', ['Nachalarmierung', '', 'Seetalstrasse 5', 'Lenzburg, Atemschutz Modul 5, 'ADL Brandbekämpfung, 'Einrücken Magazin'])
     ('12.12.2023 17:21; Oel-, Benzin-, Chemie, in Seon, Birren 2,  grosse Menge auslaufende Phosphorsäure.', ['Oel-, Benzin-, Chemie', 'Seon', 'Birren 2', ' grosse Menge auslaufende Phosphorsäure.'])
+
 ]
 
 def validate_examples(pattern, examples):
