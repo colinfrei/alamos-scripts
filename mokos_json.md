@@ -23,7 +23,7 @@ Je nach Alamos-Setup muss der HTTP-Aufruf am Ende des Batch Files angepasst werd
 
 ### 3. Mail-Verarbeitungs Einheit erstellen
 Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Mail-Eingang' an.
-Öffne diese, und importier in diese die Datei '[mokos_mail_eingang.json](/mokos_mail_eingang.json)'.
+Öffne diese, und importiere die Datei '[mokos_mail_eingang.json](/mokos_mail_eingang.json)'.
 
 ![Screenshot von MoKoS Mail Eingang Einheit in Alamos](/mokos_mail_eingang_einheit.png)
 
@@ -31,10 +31,16 @@ Je nach Alamos-Setup müssen ggf. die Pfade unter 'Datei einlesen' und 'Batch/Sh
 
 ### 4. Alarmierungs-Einheit erstellen
 Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Alarmierung' an.
+Öffne diese, und importiere  die Datei '[mokos_alarmierung.json](/mokos_alarmierung.json)'.
 
-TODO
+TODO: Bild
 
-Passe diese Einheit nach deinen Alarmierungswünschen an. Mit dem Whitelist-Plugin kann geprüft werden ob 
+Passe diese Einheit nach deinen Alarmierungswünschen an.
+
+Der Alarm hat ein Feld für jede Alarmgruppe gesetzt, im Format _alarmgruppe_xyz_ (zB _alarmgruppe_strassenrettung_), jeweils mit dem Wert _true_ oder _false_.  
+[Komplette Liste der Gruppen](mokos_transform_json.bat#L45). 
+
+Mit dem Whitelist-Plugin kann geprüft werden, ob diese Alarmgruppe alarmiert wurde, indem im Feld Wortliste der Wert _true_ eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert der Gruppe (zB _alarmgruppe_strassenrettung_)
 
 ### 5. Anlegen Mail-Alarmeingang
 Füge in Alamos, unter 'Administration -> Alarmeingang' einen neuen Alarmeingang vom Typ [Mail-Überwachung](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480356/Mail-+berwachung) hinzu.
