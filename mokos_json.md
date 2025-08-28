@@ -4,12 +4,14 @@ Dies ist die Anleitung, wie diese JSON-Alarmdaten in Alamos genutzt werden könn
 
 ![Schematische Darstellung des Alarmierungsablaufs](/mokos_alamos_ablauf.png)
 
+
 ## Konfiguration
 ### 1. Vorbereitung
 Für die Authentisierung wird ein Key benötigt, der an zwei Orten hinterlegt werden muss (in den Schritten 2 und 6).
 Generiere dafür einen zufälligen String, zB [mit diesem Tool](https://www.random.org/strings/?num=1&len=32&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
 
 Du benötigst auch die Einheit-Nr. deiner Feuerwehr aus MoKoS. Du findest diese wenn du unter https://feuerwehralarmierung.ag.ch auf die Einheit klickst.
+
 ![Einheit-Nr in MoKoS](/mokos_einheit_nr.png)
 
 ### 2. Batch Script anpassen und auf Server ablegen
