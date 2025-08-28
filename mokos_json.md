@@ -15,7 +15,7 @@ Du benötigst auch die Einheit-Nr. deiner Feuerwehr aus MoKoS. Du findest diese 
 ![Einheit-Nr in MoKoS](/mokos_einheit_nr.png)
 
 ### 2. Batch Script anpassen und auf Server ablegen
-Öffne das Batch Script '[transform_mokos_json.bat](/transform_mokos_json.bat)' in einem Texteditor, und passe die Werte für FeuerwehrID und Key mit den Werten aus Schritt 1 an.
+Öffne das Batch Script '[mokos_transform_json.bat](/mokos_transform_json.bat)' in einem Texteditor, und passe die Werte für FeuerwehrID und Key mit den Werten aus Schritt 1 an.
 
 Lege die angepasste Datei auf dem Alamos-Server im Ordner _C:\ProgramData\Alamos GmbH\FE2\Config_ ab.
 
