@@ -33,7 +33,7 @@ Je nach Alamos-Setup müssen ggf. die Pfade unter 'Datei einlesen' und 'Batch/Sh
 Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Alarmierung' an.
 Öffne diese, und importiere  die Datei '[mokos_alarmierung.json](/mokos_alarmierung.json)'.
 
-TODO: Bild
+![Screenshot von MoKoS Alarmierung Einheit in Alamos](/mokos_alarmierung_einheit.png)
 
 Passe diese Einheit nach deinen Alarmierungswünschen an.
 
