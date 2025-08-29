@@ -15,9 +15,9 @@ Du benötigst auch die Einheit-Nr. deiner Feuerwehr aus MoKoS. Du findest diese 
 ![Einheit-Nr in MoKoS](/mokos_einheit_nr.png)
 
 ### 2. Batch Script anpassen und auf Server ablegen
-Öffne das Batch Script '[mokos_transform_json.bat](/mokos_transform_json.bat)' in einem Texteditor, und passe die Werte für FeuerwehrID und Key mit den Werten aus Schritt 1 an.
+Öffne das Batch Script '[mokos_transform_json.bat](/mokos_transform_json.bat)' in einem Texteditor, und passe die Werte für _orgId_ und _authKey_ mit den Werten aus Schritt 1 an.
 
-Lege die angepasste Datei auf dem Alamos-Server im Ordner _C:\ProgramData\Alamos GmbH\FE2\Config_ ab.
+Lege die angepasste Datei auf dem Alamos-Server ab, im Ordner _C:\ProgramData\Alamos GmbH\FE2\Config\_.
 
 Je nach Alamos-Setup muss der HTTP-Aufruf am Ende des Batch Files angepasst werden (zB Port).
 
@@ -40,11 +40,11 @@ Passe diese Einheit nach deinen Alarmierungswünschen an.
 Der Alarm hat ein Feld für jede Alarmgruppe gesetzt, im Format _alarmgruppe_xyz_ (zB _alarmgruppe_strassenrettung_), jeweils mit dem Wert _true_ oder _false_.  
 [Komplette Liste der Gruppen](mokos_transform_json.bat#L45). 
 
-Mit dem Whitelist-Plugin kann geprüft werden, ob diese Alarmgruppe alarmiert wurde, indem im Feld Wortliste der Wert _true_ eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert der Gruppe (zB _alarmgruppe_strassenrettung_)
+Mit dem Whitelist-Plugin kann geprüft werden, ob diese Alarmgruppe alarmiert wurde, indem im Feld Wortliste der Wert _true_ eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert der Gruppe (zB _alarmgruppe_strassenrettung_).
 
 ### 5. Anlegen Mail-Alarmeingang
-Füge in Alamos, unter 'Administration -> Alarmeingang' einen neuen Alarmeingang vom Typ [Mail-Überwachung](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480356/Mail-+berwachung) hinzu.
-Konfiguriere diesen, neben der Konfiguration der Email-Daten, mit mindestens folgenden Werten:
+Füge in Alamos, unter 'Administration -> Alarmeingang', einen neuen Alarmeingang vom Typ [Mail-Überwachung](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480356/Mail-+berwachung) hinzu.
+Konfiguriere diesen, neben der Konfiguration der Email-Daten, mit folgenden Werten:
 - Reiter 'Sicherheit'
   - Erlaubte Absender-Email: 'kfa@die-agv.ch' eintragen
 - Reiter 'Alarmierung'
@@ -57,8 +57,8 @@ Konfiguriere diesen, neben der Konfiguration der Email-Daten, mit mindestens fol
   - Erlaubte Einheit 'MoKos Mail-Eingang' ankreuzen
 
 ### 6. Anlegen Schnittstelle-Alarmeingang
-Füge in Alamos, unter 'Administration -> Alarmeingang' einen neuen Alarmeingang vom Typ [Externe Schnittstelle](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480366/Externe+Schnittstelle) hinzu.
-Konfiguriere diesen mit mindestens folgenden Werten:
+Füge in Alamos, unter 'Administration -> Alarmeingang', einen neuen Alarmeingang vom Typ [Externe Schnittstelle](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480366/Externe+Schnittstelle) hinzu.
+Konfiguriere diesen mit folgenden Werten:
 - Reiter 'Einstellungen'
   - Version Datenformat: v2
   - Gültige Absender: Key aus Schritt 1 einfügen
@@ -77,3 +77,4 @@ Konfiguriere diesen mit mindestens folgenden Werten:
   - Erkennen von Nachalarmierungen (Alarmcount? // relevant?)
   - Spezielle Handhabung BMA
   - Objektdispositive?
+  - Weitere Alarmgruppen (MGV, ...)
