@@ -31,14 +31,25 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "        keyword = $data.AlertType; " ^
     "        keyword_description = ''; " ^
     "        keyword_misc = ''; " ^
+    "        message = @($data.ObjectName); " ^
     "        location = @{ " ^
-    "            coordinate = @($data.Coordinate | Where-Object { $_.System -eq 'WGS84' } | ForEach-Object { $_.North; $_.East }); " ^
-    "            building = ''; building_id = ''; crossing = ''; " ^
-    "            street = $data.Street; house = $data.StreetNr; additional = ''; " ^
-    "            postalCode = $data.ZipCode; city = $data.City; city_abbr = '' " ^
+    "            coordinate = @($data.Coordinate | Where-Object { $_.System -eq 'WGS84' } | ForEach-Object { $_.East; $_.North }); " ^
+    "            building = ''; " ^
+    "            building_id = ''; " ^
+    "            crossing = ''; " ^
+    "            street = $data.Street; " ^
+    "            house = $data.StreetNr; " ^
+    "            additional = ''; " ^
+    "            postalCode = $data.ZipCode; " ^
+    "            city = $data.City; " ^
+    "            city_abbr = '' " ^
     "        }; " ^
     "        caller = @{ name = ''; contact = $data.Caller }; " ^
-    "        custom = @{ remark = '' } " ^
+    "        custom = @{ " ^
+    "            pagerText = $data.PagerText; " ^
+    "            lv95_east = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty East); " ^
+    "            lv95_north = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty North); " ^
+    "        } " ^
     "    } " ^
     "}; " ^
     "$groupsDict = @{ " ^
