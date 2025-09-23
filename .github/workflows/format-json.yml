@@ -30,6 +30,8 @@ jobs:
                     .value != null
                     and .key != "licenced"
                     and .key != "version"
+                    and .key != "onlyAdminField"
+                    and .key != "optional"
                     and (.key != "validatorType" or .value != "DUMMY")
                   )
                 )
@@ -37,18 +39,20 @@ jobs:
     
             # Apply to both .nodes[].pluginData and .nodes[].nodes[].pluginData
             .nodes |= map(
-              if has("pluginData") then
-                .pluginData |= cleanPluginData
-              else
-                .
-              end
+              del(.uuid)
+              | if has("pluginData") then
+                  .pluginData |= cleanPluginData
+                else
+                  .
+                end
               | if has("nodes") then
                   .nodes |= map(
-                    if has("pluginData") then
-                      .pluginData |= cleanPluginData
-                    else
-                      .
-                    end
+                    del(.uuid)
+                    | if has("pluginData") then
+                        .pluginData |= cleanPluginData
+                      else
+                        .
+                      end
                   )
                 else
                   .
