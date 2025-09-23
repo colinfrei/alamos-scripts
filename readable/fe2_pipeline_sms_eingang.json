@@ -1719,137 +1719,65 @@
         {
           "key": "replaceArea",
           "label": "Ersetzungsregeln",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "\\d\\d\\.\\d\\d\\.\\d\\d\\d\\d \\d\\d\\:\\d\\d\\; ((Nachalarmierung), )?(.*?)?, in (.*?),( (.*?),)? (.*);$3//$4//$6//$7//$2",
           "type": "TEXT_MULTI",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "clean",
           "label": "Text sinnvoll kürzen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "known",
           "label": "Bekanntes entfernen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "param",
           "label": "Parameter",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "processSubject",
           "label": "Betreff ersetzen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "regex_label",
           "label": "Experteneinstellungen: Reguläre Ausdrücke",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "LABEL",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "regex_multiline",
           "label": "Regex MULTILINE Modus",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "regex_dotall",
           "label": "Regex DOTALL Modus",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Textersetzungsplugin zum löschen und ersetzen von Wörtern im Alarmtext",

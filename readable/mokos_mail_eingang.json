@@ -635,82 +635,43 @@
         {
           "key": "file1",
           "label": "Datei- oder Ordnerpfad für Parameter &FILE1&",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "onlyAdminField": false,
-          "options": null,
           "value": "C:\\ProgramData\\Alamos GmbH\\FE2\\.tmpDownloads",
           "type": "TEXT",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "file2",
           "label": "Datei- oder Ordnerpfad für Parameter &FILE2&",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "onlyAdminField": false,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "file3",
           "label": "Datei- oder Ordnerpfad für Parameter &FILE3&",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "onlyAdminField": false,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "append",
           "label": "Direkt dem Alarmtext hinzufügen",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "onlyAdminField": false,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "encoding",
           "label": "UTF-8 Encoding",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "onlyAdminField": false,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         }
       ],
       "description": "Plugin liest Inhalt einer Textdatei aus und fügt es dem Alarmtext hinzu",

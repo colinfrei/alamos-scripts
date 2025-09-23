@@ -10,9 +10,6 @@
         {
           "key": "keyword",
           "label": "Anzeige",
-          "category": null,
-          "filter": null,
-          "version": 2,
           "options": [
             "Stichwort",
             "Stichwort-Beschreibung",
@@ -21,73 +18,38 @@
           ],
           "value": "Stichwort",
           "type": "DROPDOWN",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "feedbackOverview",
           "label": "Rückmeldungen (Übersicht)",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "autoCalculateRoute",
           "label": "Route automatisch berechnen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "displayAlarm",
           "label": "Alarm-Anzeigedauer im Status 1, 2 und 6 (in Minuten)",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": 30,
           "type": "NUMBER",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "ids",
           "label": "aMobile",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": [
             "66cad373c83ed77a3dc18217"
           ],
           "type": "AML_SELECT",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "LIST_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "LIST_NOT_EMPTY"
         }
       ],
       "description": "Versenden Sie Alarmierungen an den aMobile PRO",
@@ -217,25 +179,12 @@
         {
           "key": "displaytext",
           "label": "Als Anzeigetext für FE2 setzen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "help",
-          "label": null,
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": [
             [
               "&TEXT&",
@@ -323,34 +272,19 @@
             ]
           ],
           "type": "TABLE",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "textarea1_new",
           "label": "Alarmtext",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "&STICHW&, in &STADT&, &STRASSE&, &Alarmtext",
           "type": "ALARMTEXT",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "helpProtected",
-          "label": null,
           "category": "PROTECTED_ALARMTEXT",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": [
             [
               "&TEXT&",
@@ -438,183 +372,89 @@
             ]
           ],
           "type": "TABLE",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "textareaProtected_new",
           "label": "Geschützter Alarmtext",
           "category": "PROTECTED_ALARMTEXT",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "ALARMTEXT",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "param1",
           "label": "&1&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param2",
           "label": "&2&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param3",
           "label": "&3&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param4",
           "label": "&4&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param5",
           "label": "&5&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param6",
           "label": "&6&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param7",
           "label": "&7&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param8",
           "label": "&8&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param9",
           "label": "&9&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "param10",
           "label": "&10&",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "speed",
           "label": "Sprechgeschwindigkeit",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "langsam",
             "mittel",
@@ -622,33 +462,18 @@
           ],
           "value": "mittel",
           "type": "DROPDOWN",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "spell-out",
           "label": "Großbuchstaben buchstabieren",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "dropdown_replace_mode_empty",
           "label": "Ersetzung leerer Parameter",
-          "category": null,
-          "filter": null,
-          "version": 2,
           "options": [
             "Bei fehlendem Parameter leer anzeigen",
             "Bei fehlendem Parameter ganze Zeile löschen",
@@ -657,11 +482,7 @@
           ],
           "value": "Bei fehlendem Parameter leer anzeigen",
           "type": "DROPDOWN",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         }
       ],
       "description": "Plugin zum Erstellen von angepassten Alarmtexten, optimiert für Wachalarm",
@@ -1065,77 +886,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Brand-Klein",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -1541,77 +1323,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Brand-Mittel",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -2018,77 +1761,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Brand-Gross",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -2492,77 +2196,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "BMA",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -2966,77 +2631,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Elementarereignis",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -3441,77 +3067,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Oel-, Benzin-, Chemie",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -3915,77 +3502,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Techn. Hilfeleistung",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -4389,77 +3937,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Verkehrsregelung",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -4863,77 +4372,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Strassenrettung",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -5337,77 +4807,38 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "Atemschutz",
           "type": "TEXT_MULTI",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "TEXT_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "source",
           "label": "Quelle",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "message",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -5438,107 +4869,59 @@
         {
           "key": "info",
           "label": "Als Info-Alarm versenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "alarm_update_info",
           "label": "Alarmupdates als Info-Alarm versenden",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "aPagerPro",
           "label": "Personen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": [
             "0f1213a0e96142a7b4b5ed8420b3a0e6"
           ],
           "type": "PERSON_SELECT",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
         },
         {
           "key": "fallback",
           "label": "Rückfallebene nutzen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "fallback_android",
           "label": "Fallback-Modus Android",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "SMS",
             "Anruf"
           ],
           "value": "SMS",
           "type": "DROPDOWN",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "fallback_ios",
           "label": "Fallback-Modus iOS",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "SMS",
             "Anruf"
           ],
           "value": "SMS",
           "type": "DROPDOWN",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "fallbackTime",
           "label": "Gesicherte Zustellzeit (in Sekunden)",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "5",
             "10",
@@ -5549,18 +4932,11 @@
           ],
           "value": "20",
           "type": "DROPDOWN",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "availabilityFilter",
           "label": "Nach Verfügbarkeit filtern",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "Alle",
             "Verfügbare",
@@ -5570,52 +4946,31 @@
           ],
           "value": "Alle",
           "type": "DROPDOWN",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "availabilityGroupFilter",
           "label": "Empfänger nach Gruppe filtern",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "Alle"
           ],
           "value": "Alle",
           "type": "OS_GROUPS",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "availabilityFunctionFilter",
           "label": "Empfänger nach Funktion filtern",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "Alle"
           ],
           "value": "Alle",
           "type": "OS_FUNCTION",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "group_mode",
           "label": "Einheitenkennung",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "Alarmstichwort",
             "Einheitenname",
@@ -5625,33 +4980,18 @@
           ],
           "value": "Einheitenname",
           "type": "DROPDOWN",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "absender",
           "label": "Einheitenkennung (eigene/Parameter)",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "notification_mode",
           "label": "Benachrichtigungsinhalt",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "Alarmtext",
             "Betreff (aus Alarmtext-Plugin)",
@@ -5659,33 +4999,18 @@
           ],
           "value": "Alarmtext",
           "type": "DROPDOWN",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "notification_param",
           "label": "Benachrichtigungsinhalt (Parameter)",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "body_mode",
           "label": "Nachrichtenkennung",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "Alarmstichwort",
             "Alarmstichwort (Beschreibung)",
@@ -5695,33 +5020,18 @@
           ],
           "value": "Alarmstichwort",
           "type": "DROPDOWN",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "body",
           "label": "Nachrichtenkennung (eigene/Parameter)",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "channel",
           "label": "Kategorie",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "Automatisch",
             "Alarm/Info-Alarm",
@@ -5730,329 +5040,177 @@
           ],
           "value": "Automatisch",
           "type": "DROPDOWN",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "feedback_overview_allowed",
           "label": "Rückmeldeübersicht erlauben",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "location_allowed",
           "label": "Einsatzadresse an Empfänger übergeben",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "fallbackP8GR",
           "label": "Rückfallebene für P8GR Alarme nutzen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "indicatorColorHex",
           "label": "Farbmarkierung",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "COLOR",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "encryptionMode",
           "label": "Verschlüsselung",
-          "category": null,
-          "filter": null,
-          "version": 1,
           "options": [
             "Unverschlüsselte Alarme verbieten",
             "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
           ],
           "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
           "type": "DROPDOWN",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "label",
           "label": "Zu alarmierende Endgeräte",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "HEADLINE",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "device_android",
           "label": "aPager PRO Android",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "device_ios",
           "label": "aPager PRO iOS",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "updateAlarmToggle",
           "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": true,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "updateParams",
           "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "TEXT",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "useSubstitutes",
           "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
-          "category": null,
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": true
         },
         {
           "key": "distanceFilter",
           "label": "Nach Entfernung filtern",
           "category": "TRACKING",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
           "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": false,
           "requiredFeature": "TRACKING"
         },
         {
           "key": "distanceFilterRadius",
           "label": "Radius (in Meter) innerhalb der Personen alarmiert werden",
           "category": "TRACKING",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": 0,
           "type": "NUMBER",
           "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": false,
           "requiredFeature": "TRACKING"
         },
         {
           "key": "distanceFilterValue",
           "label": "Anzahl der nach Entfernung zu alarmierenden Personen",
           "category": "TRACKING",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": 1,
           "type": "NUMBER",
           "optional": true,
-          "validationResponse": null,
           "validatorType": "NUMBER_NOT_0",
-          "licenced": false,
           "requiredFeature": "TRACKING"
         },
         {
           "key": "distanceAutoAlarm",
           "label": "Automatische Nachalarmierung bei zu wenig Rückmeldungen",
           "category": "TRACKING",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
           "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": false,
           "requiredFeature": "TRACKING"
         },
         {
           "key": "distanceAutoMin",
           "label": "Mindestanzahl positiver Rückmeldungen",
           "category": "TRACKING",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": 1,
           "type": "NUMBER",
           "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": false,
           "requiredFeature": "TRACKING"
         },
         {
           "key": "distanceAutoInterval",
           "label": "Intervall in Sekunden für Prüfung der Rückmeldungen",
           "category": "TRACKING",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": 30,
           "type": "NUMBER",
           "optional": true,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": false,
           "requiredFeature": "TRACKING"
         },
         {
           "key": "broadcastHint",
           "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
           "category": "BROADCAST",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": "",
           "type": "LABEL",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "broadcast",
           "label": "Rundruf aktiv",
           "category": "BROADCAST",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": false,
           "type": "CHECKBOX",
-          "optional": false,
-          "validationResponse": null,
-          "validatorType": "DUMMY",
-          "licenced": true,
-          "requiredFeature": null
+          "optional": false
         },
         {
           "key": "broadcastMinFeedback",
           "label": "Mindestanzahl positiver Rückmeldungen",
           "category": "BROADCAST",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": 1,
           "type": "NUMBER",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "NUMBER_NOT_0",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "NUMBER_NOT_0"
         },
         {
           "key": "broadcastFeedbackInterval",
           "label": "Intervall in Sekunden für Prüfung der Rückmeldungen",
           "category": "BROADCAST",
-          "filter": null,
-          "version": 1,
-          "options": null,
           "value": 30,
           "type": "NUMBER",
           "optional": false,
-          "validationResponse": null,
-          "validatorType": "NUMBER_NOT_0",
-          "licenced": true,
-          "requiredFeature": null
+          "validatorType": "NUMBER_NOT_0"
         }
       ],
       "description": "Ermöglicht das Versenden von Push Benachrichtigungen an aPager PRO.",
