@@ -1,0 +1,67 @@
+name: Make Einheiten JSON readable
+on:
+  push:
+    paths:
+      - '*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  clean-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5.0.0
+
+    - name: Clean JSON pluginData and save to readable/
+      run: |
+        for file in $(find . -name "*.json"); do
+          filename=$(basename "$file")
+          echo "Cleaning $file → $filename"
+          jq --indent 2 '
+            # Helper function to clean a pluginData array
+            def cleanPluginData:
+              map(
+                with_entries(
+                  select(
+                    .value != null
+                    and .key != "licenced"
+                    and .key != "version"
+                    and .key != "onlyAdminField"
+                    and .key != "optional"
+                    and (.key != "validatorType" or .value != "DUMMY")
+                  )
+                )
+              );
+    
+            # Apply to both .nodes[].pluginData and .nodes[].nodes[].pluginData
+            .nodes |= map(
+              del(.uuid)
+              | if has("pluginData") then
+                  .pluginData |= cleanPluginData
+                else
+                  .
+                end
+              | if has("nodes") then
+                  .nodes |= map(
+                    del(.uuid)
+                    | if has("pluginData") then
+                        .pluginData |= cleanPluginData
+                      else
+                        .
+                      end
+                  )
+                else
+                  .
+              end
+            )
+          ' "$file" > "readable/$filename"
+        done
+
+    - name: Commit cleaned files
+      uses: stefanzweifel/git-auto-commit-action@v6.0.1
+      with:
+        commit_message: "Saved cleaned JSON files to readable/"

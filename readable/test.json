@@ -1,0 +1,57 @@
+{
+  "exportVersion": "2.38.110-STABLE",
+  "nodes": [
+    {
+      "nodes": [
+        {
+          "nodes": [],
+          "name": "aPager PRO",
+          "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
+          "pluginData": [
+            {
+              "key": "info",
+              "label": "Als Info-Alarm versenden",
+              "value": false,
+              "type": "CHECKBOX"
+            },
+            {
+              "key": "alarm_update_info",
+              "label": "Alarmupdates als Info-Alarm versenden",
+              "value": true,
+              "type": "CHECKBOX"
+            },
+            {
+              "key": "selectiveAlarm",
+              "label": "Selektive Alarmierung",
+              "value": false,
+              "type": "CHECKBOX"
+            },
+            {
+              "key": "aPagerPro",
+              "label": "Personen",
+              "value": [],
+              "type": "PERSON_SELECT",
+              "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
+            },
+            {
+              "key": "fallback",
+              "label": "Rückfallebene nutzen",
+              "value": false,
+              "type": "CHECKBOX"
+            },
+            {
+              "key": "fallback_android",
+              "label": "Fallback-Modus Android",
+              "options": [
+                "SMS",
+                "Anruf"
+              ],
+              "value": "SMS",
+              "type": "DROPDOWN"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
