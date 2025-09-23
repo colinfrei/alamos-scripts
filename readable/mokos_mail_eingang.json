@@ -531,81 +531,62 @@
               "preview": false
             }
           ],
-          "uuid": "205c2b98-3c44-49e9-9574-1fe6b40f9b0f",
           "name": "Textersetzung",
           "abstractName": "de.alamos.fe2.plugin.textmod.Textmod",
           "pluginData": [
             {
               "key": "replaceArea",
               "label": "Ersetzungsregeln",
-              "onlyAdminField": false,
               "value": "\";\\\"",
-              "type": "TEXT_MULTI",
-              "optional": false
+              "type": "TEXT_MULTI"
             },
             {
               "key": "regex",
               "label": "Reguläre Ausdrücke",
-              "onlyAdminField": false,
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "clean",
               "label": "Text sinnvoll kürzen",
-              "onlyAdminField": false,
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "known",
               "label": "Bekanntes entfernen",
-              "onlyAdminField": false,
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "param",
               "label": "Parameter",
-              "onlyAdminField": false,
               "value": "FILE1",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "processSubject",
               "label": "Betreff ersetzen",
-              "onlyAdminField": false,
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "regex_label",
               "label": "Experteneinstellungen: Reguläre Ausdrücke",
-              "onlyAdminField": false,
               "value": "",
-              "type": "LABEL",
-              "optional": true
+              "type": "LABEL"
             },
             {
               "key": "regex_multiline",
               "label": "Regex MULTILINE Modus",
-              "onlyAdminField": false,
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "regex_dotall",
               "label": "Regex DOTALL Modus",
-              "onlyAdminField": false,
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             }
           ],
           "description": "Textersetzungsplugin zum löschen und ersetzen von Wörtern im Alarmtext",
@@ -628,50 +609,39 @@
           "preview": false
         }
       ],
-      "uuid": "55d29b63-8393-40ea-a283-d83043d6d0ec",
       "name": "Datei einlesen",
       "abstractName": "de.alamos.fe2.plugin.fileReader.FileReader",
       "pluginData": [
         {
           "key": "file1",
           "label": "Datei- oder Ordnerpfad für Parameter &FILE1&",
-          "onlyAdminField": false,
           "value": "C:\\ProgramData\\Alamos GmbH\\FE2\\.tmpDownloads",
           "type": "TEXT",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "file2",
           "label": "Datei- oder Ordnerpfad für Parameter &FILE2&",
-          "onlyAdminField": false,
           "value": "",
-          "type": "TEXT",
-          "optional": false
+          "type": "TEXT"
         },
         {
           "key": "file3",
           "label": "Datei- oder Ordnerpfad für Parameter &FILE3&",
-          "onlyAdminField": false,
           "value": "",
-          "type": "TEXT",
-          "optional": false
+          "type": "TEXT"
         },
         {
           "key": "append",
           "label": "Direkt dem Alarmtext hinzufügen",
-          "onlyAdminField": false,
           "value": true,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "encoding",
           "label": "UTF-8 Encoding",
-          "onlyAdminField": false,
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         }
       ],
       "description": "Plugin liest Inhalt einer Textdatei aus und fügt es dem Alarmtext hinzu",

@@ -3,7 +3,6 @@
   "nodes": [
     {
       "nodes": [],
-      "uuid": "3a0ba7bc-c711-4e62-a769-110d104b05fe",
       "name": "aMobile PRO",
       "abstractName": "de.alamos.fe2.plugin.alarmmonitorLight.AlarmMonitorLight",
       "pluginData": [
@@ -17,29 +16,25 @@
             "Stichwort-Kategorie"
           ],
           "value": "Stichwort",
-          "type": "DROPDOWN",
-          "optional": false
+          "type": "DROPDOWN"
         },
         {
           "key": "feedbackOverview",
           "label": "Rückmeldungen (Übersicht)",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "autoCalculateRoute",
           "label": "Route automatisch berechnen",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "displayAlarm",
           "label": "Alarm-Anzeigedauer im Status 1, 2 und 6 (in Minuten)",
           "value": 30,
-          "type": "NUMBER",
-          "optional": true
+          "type": "NUMBER"
         },
         {
           "key": "ids",
@@ -48,7 +43,6 @@
             "66cad373c83ed77a3dc18217"
           ],
           "type": "AML_SELECT",
-          "optional": false,
           "validatorType": "LIST_NOT_EMPTY"
         }
       ],
@@ -75,7 +69,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "e070bcb1-ff27-4f7f-be4f-8579deaa8834",
           "name": "AMweb",
           "abstractName": "de.alamos.fe2.plugin.amweb.AMWebPlugin",
           "pluginData": [
@@ -97,8 +90,7 @@
                 "10"
               ],
               "value": "0",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "printTemplate",
@@ -112,8 +104,7 @@
                 "/files/vorlagen/Alarm/FE2_Vorlage_5_Schwarz-Weiß.jrxml"
               ],
               "value": "/files/vorlagen/Alarm/FE2_Vorlage_1.jrxml",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "mode",
@@ -123,8 +114,7 @@
                 "Alarm schließen"
               ],
               "value": "Alarmierung",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "amweb",
@@ -134,22 +124,19 @@
                 "66c9c0a6307c615a2069a088"
               ],
               "type": "AM3_SELECT",
-              "optional": false,
               "validatorType": "LIST_NOT_EMPTY"
             },
             {
               "key": "printHydrants",
               "label": "Hydranten (wasserkarte.info) auf ausgedruckter Karte darstellen",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "isInfo",
               "label": "Als Infoalarm senden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             }
           ],
           "description": "Versenden Sie Alarmierungen an den AMweb",
@@ -172,7 +159,6 @@
           "preview": false
         }
       ],
-      "uuid": "7a71fb81-4e5a-42d0-bb9a-bbf521456372",
       "name": "Alarmtext (Wachalarm)",
       "abstractName": "de.alamos.fe2.plugin.text.tts.TTSAlarmText",
       "pluginData": [
@@ -180,8 +166,7 @@
           "key": "displaytext",
           "label": "Als Anzeigetext für FE2 setzen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "help",
@@ -271,15 +256,13 @@
               "Kurze Pause"
             ]
           ],
-          "type": "TABLE",
-          "optional": false
+          "type": "TABLE"
         },
         {
           "key": "textarea1_new",
           "label": "Alarmtext",
           "value": "&STICHW&, in &STADT&, &STRASSE&, &Alarmtext",
           "type": "ALARMTEXT",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
@@ -371,86 +354,74 @@
               "Kurze Pause"
             ]
           ],
-          "type": "TABLE",
-          "optional": false
+          "type": "TABLE"
         },
         {
           "key": "textareaProtected_new",
           "label": "Geschützter Alarmtext",
           "category": "PROTECTED_ALARMTEXT",
           "value": "",
-          "type": "ALARMTEXT",
-          "optional": false
+          "type": "ALARMTEXT"
         },
         {
           "key": "param1",
           "label": "&1&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param2",
           "label": "&2&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param3",
           "label": "&3&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param4",
           "label": "&4&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param5",
           "label": "&5&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param6",
           "label": "&6&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param7",
           "label": "&7&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param8",
           "label": "&8&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param9",
           "label": "&9&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "param10",
           "label": "&10&",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "speed",
@@ -461,15 +432,13 @@
             "schnell"
           ],
           "value": "mittel",
-          "type": "DROPDOWN",
-          "optional": false
+          "type": "DROPDOWN"
         },
         {
           "key": "spell-out",
           "label": "Großbuchstaben buchstabieren",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "dropdown_replace_mode_empty",
@@ -481,8 +450,7 @@
             "Bei fehlendem Parameter mit 'N/A' ersetzen"
           ],
           "value": "Bei fehlendem Parameter leer anzeigen",
-          "type": "DROPDOWN",
-          "optional": false
+          "type": "DROPDOWN"
         }
       ],
       "description": "Plugin zum Erstellen von angepassten Alarmtexten, optimiert für Wachalarm",
@@ -508,7 +476,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "1372ccf0-ce4c-4233-bc12-2dc79cc5de1f",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -516,15 +483,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -533,15 +498,13 @@
                 "group_a1a7fcb1bb2d4ff1a8c85daca2cc7819"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -551,8 +514,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -562,8 +524,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -577,8 +538,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -591,8 +551,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -601,8 +560,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -611,8 +569,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -625,15 +582,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -644,15 +599,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -665,15 +618,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -685,36 +636,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -724,50 +670,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -775,7 +714,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -784,7 +722,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -793,7 +730,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -803,7 +739,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -812,7 +747,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -821,7 +755,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -829,16 +762,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -846,7 +777,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -855,7 +785,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -879,7 +808,6 @@
           "preview": false
         }
       ],
-      "uuid": "383e9e90-52d7-41a8-b667-f779e03c511d",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -888,36 +816,31 @@
           "label": "Wortliste",
           "value": "Brand-Klein",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -943,7 +866,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "47ebfd41-deff-4c18-a575-82422b69dcc1",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -951,15 +873,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -970,15 +890,13 @@
                 "group_ed6ed4f298d1484ca1b578ebf007f24f"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -988,8 +906,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -999,8 +916,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -1014,8 +930,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -1028,8 +943,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -1038,8 +952,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -1048,8 +961,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -1062,15 +974,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -1081,15 +991,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -1102,15 +1010,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -1122,36 +1028,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -1161,50 +1062,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -1212,7 +1106,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1221,7 +1114,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1230,7 +1122,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -1240,7 +1131,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1249,7 +1139,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1258,7 +1147,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1266,16 +1154,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -1283,7 +1169,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -1292,7 +1177,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -1316,7 +1200,6 @@
           "preview": false
         }
       ],
-      "uuid": "cb722fc4-34dd-40e7-83df-f5291cf2bac3",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -1325,36 +1208,31 @@
           "label": "Wortliste",
           "value": "Brand-Mittel",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -1380,7 +1258,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "d5c7dd30-20b6-4415-9f0d-1678382b236c",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -1388,15 +1265,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -1408,15 +1283,13 @@
                 "group_ed6ed4f298d1484ca1b578ebf007f24f"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -1426,8 +1299,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -1437,8 +1309,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -1452,8 +1323,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -1466,8 +1336,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -1476,8 +1345,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -1486,8 +1354,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -1500,15 +1367,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -1519,15 +1384,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -1540,15 +1403,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -1560,36 +1421,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -1599,50 +1455,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -1650,7 +1499,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1659,7 +1507,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1668,7 +1515,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -1678,7 +1524,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1687,7 +1532,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1696,7 +1540,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -1704,16 +1547,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -1721,7 +1562,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -1730,7 +1570,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -1754,7 +1593,6 @@
           "preview": false
         }
       ],
-      "uuid": "74a38e02-1d13-4cf1-aa1b-72fc5f1a818b",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -1763,36 +1601,31 @@
           "label": "Wortliste",
           "value": "Brand-Gross",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -1818,7 +1651,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "9d080bce-ba2f-4107-9ccb-dc21f2cbeefb",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -1826,15 +1658,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -1843,15 +1673,13 @@
                 "group_a1a7fcb1bb2d4ff1a8c85daca2cc7819"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -1861,8 +1689,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -1872,8 +1699,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -1887,8 +1713,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -1901,8 +1726,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -1911,8 +1735,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -1921,8 +1744,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -1935,15 +1757,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -1954,15 +1774,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -1975,15 +1793,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -1995,36 +1811,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -2034,50 +1845,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -2085,7 +1889,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2094,7 +1897,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2103,7 +1905,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -2113,7 +1914,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2122,7 +1922,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2131,7 +1930,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2139,16 +1937,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -2156,7 +1952,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -2165,7 +1960,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -2189,7 +1983,6 @@
           "preview": false
         }
       ],
-      "uuid": "1bb6b14a-fa3f-4e08-8e65-fac6e6bd52a0",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -2198,36 +1991,31 @@
           "label": "Wortliste",
           "value": "BMA",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -2253,7 +2041,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "1a856336-818a-477a-bd75-f3cefc40d8c4",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -2261,15 +2048,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -2278,15 +2063,13 @@
                 "group_9aff42f487da433ab8987e0904a4b07e"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -2296,8 +2079,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -2307,8 +2089,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -2322,8 +2103,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -2336,8 +2116,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -2346,8 +2125,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -2356,8 +2134,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -2370,15 +2147,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -2389,15 +2164,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -2410,15 +2183,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -2430,36 +2201,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -2469,50 +2235,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -2520,7 +2279,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2529,7 +2287,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2538,7 +2295,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -2548,7 +2304,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2557,7 +2312,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2566,7 +2320,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2574,16 +2327,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -2591,7 +2342,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -2600,7 +2350,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -2624,7 +2373,6 @@
           "preview": false
         }
       ],
-      "uuid": "6f940161-f70f-442d-8ed8-da6ea5190885",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -2633,36 +2381,31 @@
           "label": "Wortliste",
           "value": "Elementarereignis",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -2688,7 +2431,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "2091ff8c-22f8-4f11-bd2c-fc6599be8e5f",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -2696,15 +2438,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -2714,15 +2454,13 @@
                 "group_34b142610ee4443ba73e137cb4e42eb7"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -2732,8 +2470,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -2743,8 +2480,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -2758,8 +2494,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -2772,8 +2507,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -2782,8 +2516,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -2792,8 +2525,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -2806,15 +2538,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -2825,15 +2555,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -2846,15 +2574,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -2866,36 +2592,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -2905,50 +2626,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -2956,7 +2670,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2965,7 +2678,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2974,7 +2686,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -2984,7 +2695,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -2993,7 +2703,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3002,7 +2711,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3010,16 +2718,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -3027,7 +2733,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -3036,7 +2741,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -3060,7 +2764,6 @@
           "preview": false
         }
       ],
-      "uuid": "fbc8676d-613e-45fe-8fd4-41874c6a09f8",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -3069,36 +2772,31 @@
           "label": "Wortliste",
           "value": "Oel-, Benzin-, Chemie",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -3124,7 +2822,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "75871dca-7a93-4f0d-a406-13f363e04ddb",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -3132,15 +2829,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -3149,15 +2844,13 @@
                 "group_9aff42f487da433ab8987e0904a4b07e"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -3167,8 +2860,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -3178,8 +2870,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -3193,8 +2884,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -3207,8 +2897,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -3217,8 +2906,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -3227,8 +2915,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -3241,15 +2928,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -3260,15 +2945,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -3281,15 +2964,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -3301,36 +2982,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -3340,50 +3016,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -3391,7 +3060,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3400,7 +3068,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3409,7 +3076,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -3419,7 +3085,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3428,7 +3093,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3437,7 +3101,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3445,16 +3108,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -3462,7 +3123,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -3471,7 +3131,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -3495,7 +3154,6 @@
           "preview": false
         }
       ],
-      "uuid": "d741f40e-45d7-4d95-b3fc-26de2ba67f9a",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -3504,36 +3162,31 @@
           "label": "Wortliste",
           "value": "Techn. Hilfeleistung",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -3559,7 +3212,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "34a05b58-d7a9-4c99-9060-a72226eabdcb",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -3567,15 +3219,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -3584,15 +3234,13 @@
                 "group_34b142610ee4443ba73e137cb4e42eb7"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -3602,8 +3250,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -3613,8 +3260,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -3628,8 +3274,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -3642,8 +3287,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -3652,8 +3296,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -3662,8 +3305,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -3676,15 +3318,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -3695,15 +3335,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -3716,15 +3354,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -3736,36 +3372,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -3775,50 +3406,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -3826,7 +3450,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3835,7 +3458,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3844,7 +3466,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -3854,7 +3475,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3863,7 +3483,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3872,7 +3491,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -3880,16 +3498,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -3897,7 +3513,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -3906,7 +3521,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -3930,7 +3544,6 @@
           "preview": false
         }
       ],
-      "uuid": "a4eeea5c-c676-48f3-9143-32ff9a7abb9a",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -3939,36 +3552,31 @@
           "label": "Wortliste",
           "value": "Verkehrsregelung",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -3994,7 +3602,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "bf8ad4a6-d2c1-4249-a1a8-cf1cdabb8ffa",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -4002,15 +3609,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -4019,15 +3624,13 @@
                 "group_a1bb01720eca4881a3802b3122d67d1f"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -4037,8 +3640,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -4048,8 +3650,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -4063,8 +3664,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -4077,8 +3677,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -4087,8 +3686,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -4097,8 +3695,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -4111,15 +3708,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -4130,15 +3725,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -4151,15 +3744,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -4171,36 +3762,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -4210,50 +3796,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -4261,7 +3840,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4270,7 +3848,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4279,7 +3856,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -4289,7 +3865,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4298,7 +3873,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4307,7 +3881,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4315,16 +3888,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -4332,7 +3903,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -4341,7 +3911,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -4365,7 +3934,6 @@
           "preview": false
         }
       ],
-      "uuid": "ee7bad4d-103d-453e-9a89-f8fd8d7d4587",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -4374,36 +3942,31 @@
           "label": "Wortliste",
           "value": "Strassenrettung",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -4429,7 +3992,6 @@
       "nodes": [
         {
           "nodes": [],
-          "uuid": "b0170d7c-9dc1-4842-a4ae-10a1bee42a8f",
           "name": "aPager PRO",
           "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
           "pluginData": [
@@ -4437,15 +3999,13 @@
               "key": "info",
               "label": "Als Info-Alarm versenden",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "alarm_update_info",
               "label": "Alarmupdates als Info-Alarm versenden",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "aPagerPro",
@@ -4454,15 +4014,13 @@
                 "group_604e0320451e4cf4a79e5c1387101624"
               ],
               "type": "PERSON_SELECT",
-              "optional": false,
               "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
             },
             {
               "key": "fallback",
               "label": "Rückfallebene nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "fallback_android",
@@ -4472,8 +4030,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallback_ios",
@@ -4483,8 +4040,7 @@
                 "Anruf"
               ],
               "value": "SMS",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "fallbackTime",
@@ -4498,8 +4054,7 @@
                 "120"
               ],
               "value": "20",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityFilter",
@@ -4512,8 +4067,7 @@
                 "Nicht Verfügbare"
               ],
               "value": "Alle",
-              "type": "DROPDOWN",
-              "optional": false
+              "type": "DROPDOWN"
             },
             {
               "key": "availabilityGroupFilter",
@@ -4522,8 +4076,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_GROUPS",
-              "optional": false
+              "type": "OS_GROUPS"
             },
             {
               "key": "availabilityFunctionFilter",
@@ -4532,8 +4085,7 @@
                 "Alle"
               ],
               "value": "Alle",
-              "type": "OS_FUNCTION",
-              "optional": false
+              "type": "OS_FUNCTION"
             },
             {
               "key": "group_mode",
@@ -4546,15 +4098,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Einheitenname",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "absender",
               "label": "Einheitenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "notification_mode",
@@ -4565,15 +4115,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmtext",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "notification_param",
               "label": "Benachrichtigungsinhalt (Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "body_mode",
@@ -4586,15 +4134,13 @@
                 "Aus Parameter (siehe Feld unten)"
               ],
               "value": "Alarmstichwort",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "body",
               "label": "Nachrichtenkennung (eigene/Parameter)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "channel",
@@ -4606,36 +4152,31 @@
                 "Wetterwarnung"
               ],
               "value": "Automatisch",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "feedback_overview_allowed",
               "label": "Rückmeldeübersicht erlauben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "location_allowed",
               "label": "Einsatzadresse an Empfänger übergeben",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "fallbackP8GR",
               "label": "Rückfallebene für P8GR Alarme nutzen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "indicatorColorHex",
               "label": "Farbmarkierung",
               "value": "",
-              "type": "COLOR",
-              "optional": true
+              "type": "COLOR"
             },
             {
               "key": "encryptionMode",
@@ -4645,50 +4186,43 @@
                 "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
               ],
               "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-              "type": "DROPDOWN",
-              "optional": true
+              "type": "DROPDOWN"
             },
             {
               "key": "label",
               "label": "Zu alarmierende Endgeräte",
               "value": "",
-              "type": "HEADLINE",
-              "optional": true
+              "type": "HEADLINE"
             },
             {
               "key": "device_android",
               "label": "aPager PRO Android",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "device_ios",
               "label": "aPager PRO iOS",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateAlarmToggle",
               "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
               "value": true,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "updateParams",
               "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
               "value": "",
-              "type": "TEXT",
-              "optional": true
+              "type": "TEXT"
             },
             {
               "key": "useSubstitutes",
               "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": true
+              "type": "CHECKBOX"
             },
             {
               "key": "distanceFilter",
@@ -4696,7 +4230,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4705,7 +4238,6 @@
               "category": "TRACKING",
               "value": 0,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4714,7 +4246,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "validatorType": "NUMBER_NOT_0",
               "requiredFeature": "TRACKING"
             },
@@ -4724,7 +4255,6 @@
               "category": "TRACKING",
               "value": false,
               "type": "CHECKBOX",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4733,7 +4263,6 @@
               "category": "TRACKING",
               "value": 1,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4742,7 +4271,6 @@
               "category": "TRACKING",
               "value": 30,
               "type": "NUMBER",
-              "optional": true,
               "requiredFeature": "TRACKING"
             },
             {
@@ -4750,16 +4278,14 @@
               "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
               "category": "BROADCAST",
               "value": "",
-              "type": "LABEL",
-              "optional": false
+              "type": "LABEL"
             },
             {
               "key": "broadcast",
               "label": "Rundruf aktiv",
               "category": "BROADCAST",
               "value": false,
-              "type": "CHECKBOX",
-              "optional": false
+              "type": "CHECKBOX"
             },
             {
               "key": "broadcastMinFeedback",
@@ -4767,7 +4293,6 @@
               "category": "BROADCAST",
               "value": 1,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             },
             {
@@ -4776,7 +4301,6 @@
               "category": "BROADCAST",
               "value": 30,
               "type": "NUMBER",
-              "optional": false,
               "validatorType": "NUMBER_NOT_0"
             }
           ],
@@ -4800,7 +4324,6 @@
           "preview": false
         }
       ],
-      "uuid": "eee93ce1-24f2-42b1-9fd4-de29d143f468",
       "name": "WhiteList",
       "abstractName": "de.alamos.fe2.plugin.whitelist.WhiteList",
       "pluginData": [
@@ -4809,36 +4332,31 @@
           "label": "Wortliste",
           "value": "Atemschutz",
           "type": "TEXT_MULTI",
-          "optional": false,
           "validatorType": "TEXT_NOT_EMPTY"
         },
         {
           "key": "casesensetive",
           "label": "Klein/Großschreibung beachten",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "regex",
           "label": "Reguläre Ausdrücke verwenden",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "source",
           "label": "Quelle",
           "value": "message",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "filterParam",
           "label": "Nur gültige Whitelisteinträge im Parameter belassen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         }
       ],
       "description": "Möglichkeit zum Abbruch einer Alarmabarbeitung wenn bestimmte Wörter im Alarmtext nicht enthalten sind.",
@@ -4862,7 +4380,6 @@
     },
     {
       "nodes": [],
-      "uuid": "add96e98-464f-4bc3-998b-be4fd30d0439",
       "name": "aPager PRO",
       "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
       "pluginData": [
@@ -4870,15 +4387,13 @@
           "key": "info",
           "label": "Als Info-Alarm versenden",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "alarm_update_info",
           "label": "Alarmupdates als Info-Alarm versenden",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "aPagerPro",
@@ -4887,15 +4402,13 @@
             "0f1213a0e96142a7b4b5ed8420b3a0e6"
           ],
           "type": "PERSON_SELECT",
-          "optional": false,
           "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
         },
         {
           "key": "fallback",
           "label": "Rückfallebene nutzen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "fallback_android",
@@ -4905,8 +4418,7 @@
             "Anruf"
           ],
           "value": "SMS",
-          "type": "DROPDOWN",
-          "optional": false
+          "type": "DROPDOWN"
         },
         {
           "key": "fallback_ios",
@@ -4916,8 +4428,7 @@
             "Anruf"
           ],
           "value": "SMS",
-          "type": "DROPDOWN",
-          "optional": false
+          "type": "DROPDOWN"
         },
         {
           "key": "fallbackTime",
@@ -4931,8 +4442,7 @@
             "120"
           ],
           "value": "20",
-          "type": "DROPDOWN",
-          "optional": false
+          "type": "DROPDOWN"
         },
         {
           "key": "availabilityFilter",
@@ -4945,8 +4455,7 @@
             "Nicht Verfügbare"
           ],
           "value": "Alle",
-          "type": "DROPDOWN",
-          "optional": false
+          "type": "DROPDOWN"
         },
         {
           "key": "availabilityGroupFilter",
@@ -4955,8 +4464,7 @@
             "Alle"
           ],
           "value": "Alle",
-          "type": "OS_GROUPS",
-          "optional": false
+          "type": "OS_GROUPS"
         },
         {
           "key": "availabilityFunctionFilter",
@@ -4965,8 +4473,7 @@
             "Alle"
           ],
           "value": "Alle",
-          "type": "OS_FUNCTION",
-          "optional": false
+          "type": "OS_FUNCTION"
         },
         {
           "key": "group_mode",
@@ -4979,15 +4486,13 @@
             "Aus Parameter (siehe Feld unten)"
           ],
           "value": "Einheitenname",
-          "type": "DROPDOWN",
-          "optional": true
+          "type": "DROPDOWN"
         },
         {
           "key": "absender",
           "label": "Einheitenkennung (eigene/Parameter)",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "notification_mode",
@@ -4998,15 +4503,13 @@
             "Aus Parameter (siehe Feld unten)"
           ],
           "value": "Alarmtext",
-          "type": "DROPDOWN",
-          "optional": true
+          "type": "DROPDOWN"
         },
         {
           "key": "notification_param",
           "label": "Benachrichtigungsinhalt (Parameter)",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "body_mode",
@@ -5019,15 +4522,13 @@
             "Aus Parameter (siehe Feld unten)"
           ],
           "value": "Alarmstichwort",
-          "type": "DROPDOWN",
-          "optional": true
+          "type": "DROPDOWN"
         },
         {
           "key": "body",
           "label": "Nachrichtenkennung (eigene/Parameter)",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "channel",
@@ -5039,36 +4540,31 @@
             "Wetterwarnung"
           ],
           "value": "Automatisch",
-          "type": "DROPDOWN",
-          "optional": true
+          "type": "DROPDOWN"
         },
         {
           "key": "feedback_overview_allowed",
           "label": "Rückmeldeübersicht erlauben",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "location_allowed",
           "label": "Einsatzadresse an Empfänger übergeben",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "fallbackP8GR",
           "label": "Rückfallebene für P8GR Alarme nutzen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "indicatorColorHex",
           "label": "Farbmarkierung",
           "value": "",
-          "type": "COLOR",
-          "optional": true
+          "type": "COLOR"
         },
         {
           "key": "encryptionMode",
@@ -5078,50 +4574,43 @@
             "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden"
           ],
           "value": "Wenn Verschlüsselung nicht möglich, unverschlüsselt versenden",
-          "type": "DROPDOWN",
-          "optional": true
+          "type": "DROPDOWN"
         },
         {
           "key": "label",
           "label": "Zu alarmierende Endgeräte",
           "value": "",
-          "type": "HEADLINE",
-          "optional": true
+          "type": "HEADLINE"
         },
         {
           "key": "device_android",
           "label": "aPager PRO Android",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "device_ios",
           "label": "aPager PRO iOS",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "updateAlarmToggle",
           "label": "Bei Aktualisierung des Alarms Änderungen nachsenden (wenn von Admin aktiv)",
           "value": true,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "updateParams",
           "label": "Parameter, bei deren Änderung Update direkt gesendet werden soll (leer lassen für alle)",
           "value": "",
-          "type": "TEXT",
-          "optional": true
+          "type": "TEXT"
         },
         {
           "key": "useSubstitutes",
           "label": "Wenn nur (bedingt) verfügbare Personen alarmiert werden, Bereichsfolge berücksichtigen",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": true
+          "type": "CHECKBOX"
         },
         {
           "key": "distanceFilter",
@@ -5129,7 +4618,6 @@
           "category": "TRACKING",
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
           "requiredFeature": "TRACKING"
         },
         {
@@ -5138,7 +4626,6 @@
           "category": "TRACKING",
           "value": 0,
           "type": "NUMBER",
-          "optional": true,
           "requiredFeature": "TRACKING"
         },
         {
@@ -5147,7 +4634,6 @@
           "category": "TRACKING",
           "value": 1,
           "type": "NUMBER",
-          "optional": true,
           "validatorType": "NUMBER_NOT_0",
           "requiredFeature": "TRACKING"
         },
@@ -5157,7 +4643,6 @@
           "category": "TRACKING",
           "value": false,
           "type": "CHECKBOX",
-          "optional": true,
           "requiredFeature": "TRACKING"
         },
         {
@@ -5166,7 +4651,6 @@
           "category": "TRACKING",
           "value": 1,
           "type": "NUMBER",
-          "optional": true,
           "requiredFeature": "TRACKING"
         },
         {
@@ -5175,7 +4659,6 @@
           "category": "TRACKING",
           "value": 30,
           "type": "NUMBER",
-          "optional": true,
           "requiredFeature": "TRACKING"
         },
         {
@@ -5183,16 +4666,14 @@
           "label": "Ist der Rundruf aktiv, wird der Filter nach Android und iOS nicht verwendet",
           "category": "BROADCAST",
           "value": "",
-          "type": "LABEL",
-          "optional": false
+          "type": "LABEL"
         },
         {
           "key": "broadcast",
           "label": "Rundruf aktiv",
           "category": "BROADCAST",
           "value": false,
-          "type": "CHECKBOX",
-          "optional": false
+          "type": "CHECKBOX"
         },
         {
           "key": "broadcastMinFeedback",
@@ -5200,7 +4681,6 @@
           "category": "BROADCAST",
           "value": 1,
           "type": "NUMBER",
-          "optional": false,
           "validatorType": "NUMBER_NOT_0"
         },
         {
@@ -5209,7 +4689,6 @@
           "category": "BROADCAST",
           "value": 30,
           "type": "NUMBER",
-          "optional": false,
           "validatorType": "NUMBER_NOT_0"
         }
       ],
