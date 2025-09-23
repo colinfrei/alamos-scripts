@@ -2,7 +2,7 @@
 setlocal
 
 REM ================================
-REM Konfigurierbare Werte
+REM Configurable values
 set "orgId=755"
 set "authKey=r0liuU2yk8R6gGcXgd1ZgXFZylX43kSe"
 REM ================================
@@ -49,43 +49,23 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "            pagerText = $data.PagerText; " ^
     "            lv95_east = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty East); " ^
     "            lv95_north = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty North); " ^
+    "            alarmGroups = ''; " ^
+    "            alarmGroupsOther = '' " ^
     "        } " ^
     "    } " ^
     "}; " ^
-    "$groupsDict = @{ " ^
-    "    'alarmgruppe_atemschutz' = $false; " ^
-    "    'alarmgruppe_gruppe1' = $false; " ^
-    "    'alarmgruppe_gruppe2' = $false; " ^
-    "    'alarmgruppe_gruppe3' = $false; " ^
-    "    'alarmgruppe_gruppe4' = $false; " ^
-    "    'alarmgruppe_hrf' = $false; " ^
-    "    'alarmgruppe_kommandogruppe' = $false; " ^
-    "    'alarmgruppe_konferenzgespraech' = $false; " ^
-    "    'alarmgruppe_notfalltreffpunkte' = $false; " ^
-    "    'alarmgruppe_strassenrettung' = $false; " ^
-    "    'alarmgruppe_verkehrsgruppe' = $false " ^
-    "}; " ^
-    "$mapping = @{ " ^
-    "    '4'   = 'alarmgruppe_atemschutz'; " ^
-    "    '1'   = 'alarmgruppe_gruppe1'; " ^
-    "    '2'   = 'alarmgruppe_gruppe2'; " ^
-    "    '50'  = 'alarmgruppe_gruppe3'; " ^
-    "    '111' = 'alarmgruppe_gruppe4'; " ^
-    "    '200' = 'alarmgruppe_hrf'; " ^
-    "    '3'   = 'alarmgruppe_kommandogruppe'; " ^
-    "    '6'   = 'alarmgruppe_konferenzgespraech'; " ^
-    "    '468' = 'alarmgruppe_notfalltreffpunkte'; " ^
-    "    '53'  = 'alarmgruppe_strassenrettung'; " ^
-    "    '5'   = 'alarmgruppe_verkehrsgruppe'; " ^
-    "}; " ^
     "$org = $data.Organisations | Where-Object { $_.Id -eq $orgId }; " ^
     "if ($org -and $org.Groups) { " ^
-    "    foreach ($g in $org.Groups) { " ^
-    "        $id = $g.Id.ToString(); " ^
-    "        if ($mapping.ContainsKey($id)) { $groupsDict[$mapping[$id]] = $true } else { Write-Host 'Unknown group id:' $id '('$g.Name')' }" ^
-    "    } " ^
+    "    $groupNames = @(); " ^
+    "    foreach ($g in $org.Groups) { $groupNames += $g.Name } " ^
+    "    if ($groupNames) { $output.data.custom.alarmGroups = ($groupNames -join \"`n\") } " ^
     "} " ^
-    "foreach ($k in $groupsDict.Keys) { $output.data.custom[$k] = $groupsDict[$k] } " ^
+    "$otherOrgGroups = @(); " ^
+    "$otherOrgs = $data.Organisations | Where-Object { $_.Id -ne $orgId }; " ^
+    "foreach ($o in $otherOrgs) { " ^
+    "    foreach ($g in $o.Groups) { $otherOrgGroups += (\"{0}: {1}\" -f $o.Name, $g.Name) } " ^
+    "} " ^
+    "if ($otherOrgGroups) { $output.data.custom.alarmGroupsOther = ($otherOrgGroups -join \"`n\") } " ^
     "$jsonOut = $output | ConvertTo-Json -Depth 10 -Compress; " ^
     "Invoke-RestMethod -Uri 'http://127.0.0.1:83/rest/external/http/alarm/v2' -Method POST -Body $jsonOut -ContentType 'application/json'"
 
