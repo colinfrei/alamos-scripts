@@ -22,15 +22,38 @@ jobs:
           filename=$(basename "$file")
           echo "Cleaning $file → $filename"
           jq --indent 2 '
-            (.nodes[].nodes[].pluginData[]) |= 
-              with_entries(
-                select(
-                  .value != null 
-                  and .key != "licenced" 
-                  and .key != "version" 
-                  and (.key != "validatorType" or .value != "DUMMY")
+            # Helper function to clean a pluginData array
+            def cleanPluginData:
+              map(
+                with_entries(
+                  select(
+                    .value != null
+                    and .key != "licenced"
+                    and .key != "version"
+                    and (.key != "validatorType" or .value != "DUMMY")
+                  )
                 )
-              )
+              );
+    
+            # Apply to both .nodes[].pluginData and .nodes[].nodes[].pluginData
+            .nodes |= map(
+              if has("pluginData") then
+                .pluginData |= cleanPluginData
+              else
+                .
+              end
+              | if has("nodes") then
+                  .nodes |= map(
+                    if has("pluginData") then
+                      .pluginData |= cleanPluginData
+                    else
+                      .
+                    end
+                  )
+                else
+                  .
+              end
+            )
           ' "$file" > "readable/$filename"
         done
 
