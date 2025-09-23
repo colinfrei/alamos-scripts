@@ -32,6 +32,6 @@ jobs:
         done
 
     - name: Commit cleaned files
-      uses: stefanzweifel/git-auto-commit-action@v6.0.01
+      uses: stefanzweifel/git-auto-commit-action@v6.0.1
       with:
         commit_message: "Saved cleaned JSON files to readable/"
