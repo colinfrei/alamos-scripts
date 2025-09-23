@@ -343,7 +343,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Atemschutz",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -362,7 +362,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_atemschutz",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -733,7 +733,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Gruppe 1",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -752,7 +752,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_gruppe1",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Gruppe 3",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -1532,7 +1532,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_gruppe3",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -1903,7 +1903,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Gruppe 4",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -1922,7 +1922,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_gruppe4",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -2293,7 +2293,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Kommandogruppe",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -2312,7 +2312,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_kommandogruppe",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -2683,7 +2683,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Konferenzgespräch",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -2702,7 +2702,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "konferenzgespraech",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -3073,7 +3073,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "HRF",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -3092,7 +3092,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_hrf",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -3463,7 +3463,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Notfalltreffpunkte",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -3482,7 +3482,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_notfalltreffpunkte",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -3853,7 +3853,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Strassenrettung",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -3872,7 +3872,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_strassenrettung",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
@@ -4243,7 +4243,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Verkehrsgruppe",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -4262,7 +4262,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_verkehrsgruppe",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
