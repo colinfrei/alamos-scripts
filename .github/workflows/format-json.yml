@@ -1,0 +1,37 @@
+name: Make Einheiten JSON readable
+on:
+  push:
+    paths:
+      - '*.json'
+  workflow_dispatch:
+
+jobs:
+  clean-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Clean JSON pluginData and save to readable/
+      run: |
+        for file in $(find . -name "*.json"); do
+          filename=$(basename "$file")
+          echo "Cleaning $file → $filename"
+          jq --indent 2 '
+            (.nodes[].nodes[].pluginData[]) |= 
+              with_entries(
+                select(
+                  .value != null 
+                  and .key != "licenced" 
+                  and .key != "version" 
+                  and (.key != "validatorType" or .value != "DUMMY")
+                )
+              )
+          ' "$file" > "readable/$filename"
+        done
+
+    - name: Commit cleaned files
+      uses: stefanzweifel/git-auto-commit-action@v6.0.01
+      with:
+        commit_message: "Saved cleaned JSON files to readable/"
