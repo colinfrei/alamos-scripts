@@ -1,0 +1,70 @@
+{
+  "exportVersion": "2.38.110-STABLE",
+  "nodes": [
+    {
+      "nodes": [
+        {
+          "nodes": [],
+          "uuid": "f83b32aa-e2c0-4342-8ff5-fa9c56ef2a81",
+          "name": "aPager PRO",
+          "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
+          "pluginData": [
+            {
+              "key": "info",
+              "label": "Als Info-Alarm versenden",
+              "onlyAdminField": false,
+              "value": false,
+              "type": "CHECKBOX",
+              "optional": false
+            },
+            {
+              "key": "alarm_update_info",
+              "label": "Alarmupdates als Info-Alarm versenden",
+              "onlyAdminField": false,
+              "value": true,
+              "type": "CHECKBOX",
+              "optional": false
+            },
+            {
+              "key": "selectiveAlarm",
+              "label": "Selektive Alarmierung",
+              "onlyAdminField": false,
+              "value": false,
+              "type": "CHECKBOX",
+              "optional": false
+            },
+            {
+              "key": "aPagerPro",
+              "label": "Personen",
+              "onlyAdminField": false,
+              "value": [],
+              "type": "PERSON_SELECT",
+              "optional": false,
+              "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY"
+            },
+            {
+              "key": "fallback",
+              "label": "Rückfallebene nutzen",
+              "onlyAdminField": false,
+              "value": false,
+              "type": "CHECKBOX",
+              "optional": false
+            },
+            {
+              "key": "fallback_android",
+              "label": "Fallback-Modus Android",
+              "onlyAdminField": false,
+              "options": [
+                "SMS",
+                "Anruf"
+              ],
+              "value": "SMS",
+              "type": "DROPDOWN",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
