@@ -1,0 +1,116 @@
+{
+  "exportVersion": "2.38.110-STABLE",
+  "nodes": [
+    {
+      "nodes": [
+        {
+          "nodes": [],
+          "uuid": "f83b32aa-e2c0-4342-8ff5-fa9c56ef2a81",
+          "name": "aPager PRO",
+          "abstractName": "de.alamos.fe2.plugin.apager_pro.ApagerPro",
+          "pluginData": [
+            {
+              "key": "info",
+              "label": "Als Info-Alarm versenden",
+              "category": null,
+              "filter": null,
+              "version": 1,
+              "onlyAdminField": false,
+              "options": null,
+              "value": false,
+              "type": "CHECKBOX",
+              "optional": false,
+              "validationResponse": null,
+              "validatorType": "DUMMY",
+              "licenced": true,
+              "requiredFeature": null
+            },
+            {
+              "key": "alarm_update_info",
+              "label": "Alarmupdates als Info-Alarm versenden",
+              "category": null,
+              "filter": null,
+              "version": 1,
+              "onlyAdminField": false,
+              "options": null,
+              "value": true,
+              "type": "CHECKBOX",
+              "optional": false,
+              "validationResponse": null,
+              "validatorType": "DUMMY",
+              "licenced": true,
+              "requiredFeature": null
+            },
+            {
+              "key": "selectiveAlarm",
+              "label": "Selektive Alarmierung",
+              "category": null,
+              "filter": null,
+              "version": 1,
+              "onlyAdminField": false,
+              "options": null,
+              "value": false,
+              "type": "CHECKBOX",
+              "optional": false,
+              "validationResponse": null,
+              "validatorType": "DUMMY",
+              "licenced": true,
+              "requiredFeature": null
+            },
+            {
+              "key": "aPagerPro",
+              "label": "Personen",
+              "category": null,
+              "filter": null,
+              "version": 1,
+              "onlyAdminField": false,
+              "options": null,
+              "value": [],
+              "type": "PERSON_SELECT",
+              "optional": false,
+              "validationResponse": null,
+              "validatorType": "QUICK_EDIT_AWARE_LIST_NOT_EMPTY",
+              "licenced": true,
+              "requiredFeature": null
+            },
+            {
+              "key": "fallback",
+              "label": "Rückfallebene nutzen",
+              "category": null,
+              "filter": null,
+              "version": 1,
+              "onlyAdminField": false,
+              "options": null,
+              "value": false,
+              "type": "CHECKBOX",
+              "optional": false,
+              "validationResponse": null,
+              "validatorType": "DUMMY",
+              "licenced": true,
+              "requiredFeature": null
+            },
+            {
+              "key": "fallback_android",
+              "label": "Fallback-Modus Android",
+              "category": null,
+              "filter": null,
+              "version": 1,
+              "onlyAdminField": false,
+              "options": [
+                "SMS",
+                "Anruf"
+              ],
+              "value": "SMS",
+              "type": "DROPDOWN",
+              "optional": false,
+              "validationResponse": null,
+              "validatorType": "DUMMY",
+              "licenced": true,
+              "requiredFeature": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
