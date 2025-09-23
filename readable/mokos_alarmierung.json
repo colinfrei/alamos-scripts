@@ -1123,7 +1123,7 @@
         {
           "key": "whitewords",
           "label": "Wortliste",
-          "value": "true",
+          "value": "Gruppe 2",
           "type": "TEXT_MULTI",
           "validatorType": "TEXT_NOT_EMPTY"
         },
@@ -1142,7 +1142,7 @@
         {
           "key": "source",
           "label": "Quelle",
-          "value": "alarmgruppe_gruppe2",
+          "value": "alarmGroups",
           "type": "TEXT"
         },
         {
