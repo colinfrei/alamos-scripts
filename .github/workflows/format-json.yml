@@ -5,6 +5,9 @@ on:
       - '*.json'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   clean-json:
     runs-on: ubuntu-latest
