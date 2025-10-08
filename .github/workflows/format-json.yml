@@ -2,7 +2,8 @@ name: Make Einheiten JSON readable
 on:
   push:
     paths:
-      - '*.json'
+      - 'mokos_sms/*.json'
+      - 'mokos_email/*.json'
   workflow_dispatch:
 
 permissions:
@@ -18,9 +19,11 @@ jobs:
 
     - name: Clean JSON pluginData and save to readable/
       run: |
-        for file in $(find . -name "*.json"); do
+        for file in $(find mokos_sms mokos_email -type f -name "*.json"); do
+          dir=$(dirname "$file")
           filename=$(basename "$file")
-          echo "Cleaning $file → $filename"
+          output_dir="$dir/readable"
+          echo "Cleaning $file → $output_dir/$filename"
           jq --indent 2 '
             # Helper function to clean a pluginData array
             def cleanPluginData:
@@ -58,7 +61,7 @@ jobs:
                   .
               end
             )
-          ' "$file" > "readable/$filename"
+          ' "$file" > "$output_dir/$filename"
         done
 
     - name: Commit cleaned files
