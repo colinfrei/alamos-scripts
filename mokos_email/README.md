@@ -37,10 +37,24 @@ Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Alarmi
 
 Passe diese Einheit nach deinen Alarmierungswünschen an.
 
-Der Alarm hat ein Feld für jede Alarmgruppe gesetzt, im Format _alarmgruppe_xyz_ (zB _alarmgruppe_strassenrettung_), jeweils mit dem Wert _true_ oder _false_.  
-[Komplette Liste der Gruppen](mokos_email/mokos_transform_json.bat#L45). 
+Der Alarm hat im Feld `alarmGroups` eine Liste der alarmierten Gruppen der eigenen Feuerwehr. Die Gruppen sind so wie sie von der KNZ übermittelt werden, aktuell kennen wir diese möglichen Werte:
+- Gruppe 1
+- Gruppe 2
+- Gruppe 3
+- Gruppe 4
+- Kommandogruppe
+- Atemschutz
+- Verkehrsgruppe
+- Konferenzgespräch
+- Sanitätsgruppe
+- Strassenrettung
+- Gruppe HRF
+- Gruppe MGV
+- Notfalltreffpunkte
 
-Mit dem Whitelist-Plugin kann geprüft werden, ob diese Alarmgruppe alarmiert wurde, indem im Feld Wortliste der Wert _true_ eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert der Gruppe (zB _alarmgruppe_strassenrettung_).
+Zusätzlich werden im Feld `alarmGroupsOther` die aufgebotenen Gruppen der Nachbarfeuerwehren aufgelistet, jeweils mit dem Prefix der Feuerwehr (zB _FW Seon-Egliswil: Gruppe 1_).
+
+Mit dem Whitelist-Plugin kann geprüft werden, ob eine Alarmgruppe alarmiert wurde, indem im Feld Wortliste der Name der Gruppe eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert _alarmGroups_.
 
 ### 5. Anlegen Mail-Alarmeingang
 Füge in Alamos, unter 'Administration -> Alarmeingang', einen neuen Alarmeingang vom Typ [Mail-Überwachung](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480356/Mail-+berwachung) hinzu.
