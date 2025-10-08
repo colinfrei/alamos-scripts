@@ -29,9 +29,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "    data = @{ " ^
     "        externalId = $data.AlarmId; " ^
     "        keyword = $data.AlertType; " ^
-    "        keyword_description = ''; " ^
+    "        keyword_description = $data.ObjectName; " ^
     "        keyword_misc = ''; " ^
-    "        message = @($data.ObjectName); " ^
+    "        message = @($data.PagerText); " ^
     "        location = @{ " ^
     "            coordinate = @($data.Coordinate | Where-Object { $_.System -eq 'WGS84' } | ForEach-Object { $_.East; $_.North }); " ^
     "            building = ''; " ^
@@ -47,6 +47,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "        caller = @{ name = ''; contact = $data.Caller }; " ^
     "        custom = @{ " ^
     "            pagerText = $data.PagerText; " ^
+    "            knzAlarmTime = $data.AlarmStart; " ^
     "            lv95_east = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty East); " ^
     "            lv95_north = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty North); " ^
     "            alarmGroups = ''; " ^
