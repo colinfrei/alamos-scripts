@@ -1,4 +1,4 @@
-# alamos-scripts
+# Sammlung Scripts für Alamos mit Lodur und MoKoS
 Alamos Scripts, genutzt von der Feuerwehr Seon-Egliswil, mit Lodur / MoKoS
 
 ## MoKoS Alarmierung via Email
