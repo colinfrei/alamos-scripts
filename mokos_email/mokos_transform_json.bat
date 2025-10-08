@@ -45,12 +45,17 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "            city_abbr = '' " ^
     "        }; " ^
     "        caller = @{ name = ''; contact = $data.Caller }; " ^
+    "        patient = @(@{ " ^
+    "            remark = 'Pseudo-Patient fuer Alarmgruppen'; " ^
+    "            patientNumber = ''; " ^
+    "        }); " ^
     "        custom = @{ " ^
     "            pagerText = $data.PagerText; " ^
     "            knzAlarmTime = $data.AlarmStart; " ^
     "            lv95_east = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty East); " ^
     "            lv95_north = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty North); " ^
     "            alarmGroups = ''; " ^
+    "            alarmGroupIds = ''; " ^
     "            alarmGroupsOther = '' " ^
     "        } " ^
     "    } " ^
@@ -58,8 +63,16 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "$org = $data.Organisations | Where-Object { $_.Id -eq $orgId }; " ^
     "if ($org -and $org.Groups) { " ^
     "    $groupNames = @(); " ^
-    "    foreach ($g in $org.Groups) { $groupNames += $g.Name } " ^
+    "    $groupIds = @(); " ^
+    "    foreach ($g in $org.Groups) { " ^
+    "        $groupNames += $g.Name; " ^
+    "        $groupIds += $g.Id; " ^
+    "    } " ^
     "    if ($groupNames) { $output.data.custom.alarmGroups = ($groupNames -join \"`n\") } " ^
+    "    if ($groupIds) { " ^
+    "        $output.data.custom.alarmGroupIds = ($groupIds -join \"`n\"); " ^
+    "        $output.data.patient[0].patientNumber = ($groupIds -join \"`n\"); " ^
+    "    } " ^
     "} " ^
     "$otherOrgGroups = @(); " ^
     "$otherOrgs = $data.Organisations | Where-Object { $_.Id -ne $orgId }; " ^
