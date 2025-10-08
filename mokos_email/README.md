@@ -38,23 +38,24 @@ Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Alarmi
 Passe diese Einheit nach deinen Alarmierungswünschen an.
 
 Der Alarm hat im Feld `alarmGroups` eine Liste der alarmierten Gruppen der eigenen Feuerwehr. Die Gruppen sind so wie sie von der KNZ übermittelt werden, aktuell kennen wir diese möglichen Werte:
-- Gruppe 1
-- Gruppe 2
-- Gruppe 3
-- Gruppe 4
-- Kommandogruppe
-- Atemschutz
-- Verkehrsgruppe
-- Konferenzgespräch
-- Sanitätsgruppe
-- Strassenrettung
-- Gruppe HRF
-- Gruppe MGV
-- Notfalltreffpunkte
+- Gruppe 1 (_ID: 1_)
+- Gruppe 2 (_ID: 2_)
+- Gruppe 3 (_ID: 50_)
+- Gruppe 4 (_ID: 111_)
+- Kommandogruppe (_ID: 3_)
+- Kommandogruppe 2 (_ID: 20_)
+- Atemschutz (_ID: 4_)
+- Verkehrsgruppe (_ID: 5_)
+- Konferenzgespräch (_ID: 6_)
+- Sanitätsgruppe (_ID: 9_)
+- Strassenrettung (_ID: 53_)
+- Gruppe HRF (_ID: 200_)
+- Gruppe MGV (_ID: 428_)
+- Notfalltreffpunkte (_ID: 468_)
 
 Zusätzlich werden im Feld `alarmGroupsOther` die aufgebotenen Gruppen der Nachbarfeuerwehren aufgelistet, jeweils mit dem Prefix der Feuerwehr (zB _FW Seon-Egliswil: Gruppe 1_).
 
-Mit dem Whitelist-Plugin kann geprüft werden, ob eine Alarmgruppe alarmiert wurde, indem im Feld Wortliste der Name der Gruppe eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert _alarmGroups_.
+Mit dem Whitelist-Plugin kann geprüft werden, ob eine Alarmgruppe alarmiert wurde, indem im Feld Wortliste die ID der Gruppe eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert _alarmGroupsIds_.
 
 ### 5. Anlegen Mail-Alarmeingang
 Füge in Alamos, unter 'Administration -> Alarmeingang', einen neuen Alarmeingang vom Typ [Mail-Überwachung](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480356/Mail-+berwachung) hinzu.
