@@ -5,7 +5,7 @@ Alamos Scripts, genutzt von der Feuerwehr Seon-Egliswil, mit Lodur / MoKoS
 Die Alarmierung via Email bietet am meisten Informationen.  
 [Anleitung im Ordner mokos_email](mokos_email/README.md)
 
-## MoKoSAlarmierung via SMS
+## MoKoS Alarmierung via SMS
 Die Alarmierung via SMS importiert das SMS, wie es jeder Alarmierte erhält.  
 [Anleitung im Ordner mokos_sms](mokos_sms/README.md)
 
