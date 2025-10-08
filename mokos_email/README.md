@@ -2,7 +2,7 @@
 Das Alarmierungssystem MoKoS hat die Möglichkeit, eine Alarmierung per Email zu senden, mit den Alarmdaten als JSON-Anhang.
 Dies ist die Anleitung, wie diese JSON-Alarmdaten in Alamos genutzt werden können.
 
-![Schematische Darstellung des Alarmierungsablaufs](/mokos_alamos_ablauf.png)
+![Schematische Darstellung des Alarmierungsablaufs](/mokos_email/mokos_alamos_ablauf.png)
 
 
 ## Konfiguration
@@ -12,10 +12,10 @@ Generiere dafür einen zufälligen String, zB [mit diesem Tool](https://www.rand
 
 Du benötigst auch die Einheit-Nr. deiner Feuerwehr aus MoKoS. Du findest diese wenn du unter https://feuerwehralarmierung.ag.ch (oder vergleichbare MoKoS Web-Seite anderer Regionen) auf die Einheit klickst.
 
-![Einheit-Nr in MoKoS](/mokos_einheit_nr.png)
+![Einheit-Nr in MoKoS](/mokos_email/mokos_einheit_nr.png)
 
 ### 2. Batch Script anpassen und auf Server ablegen
-Öffne das Batch Script '[mokos_transform_json.bat](/mokos_transform_json.bat)' in einem Texteditor, und passe die Werte für _orgId_ und _authKey_ mit den Werten aus Schritt 1 an.
+Öffne das Batch Script '[mokos_transform_json.bat](/mokos_email/mokos_transform_json.bat)' in einem Texteditor, und passe die Werte für _orgId_ und _authKey_ mit den Werten aus Schritt 1 an.
 
 Lege die angepasste Datei auf dem Alamos-Server ab, im Ordner _C:\ProgramData\Alamos GmbH\FE2\Config\_.
 
@@ -23,22 +23,22 @@ Je nach Alamos-Setup muss der HTTP-Aufruf am Ende des Batch Files angepasst werd
 
 ### 3. Mail-Verarbeitungs Einheit erstellen
 Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Mail-Eingang' an.
-Öffne diese, und importiere die Datei '[mokos_mail_eingang.json](/mokos_mail_eingang.json)'.
+Öffne diese, und importiere die Datei '[mokos_mail_eingang.json](/mokos_email/mokos_mail_eingang.json)'.
 
-![Screenshot von MoKoS Mail Eingang Einheit in Alamos](/mokos_mail_eingang_einheit.png)
+![Screenshot von MoKoS Mail Eingang Einheit in Alamos](/mokos_email/mokos_mail_eingang_einheit.png)
 
 Je nach Alamos-Setup müssen ggf. die Pfade unter 'Datei einlesen' und 'Batch/Shell-Skripte' angepasst werden.
 
 ### 4. Alarmierungs-Einheit erstellen
 Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Alarmierung' an.
-Öffne diese, und importiere  die Datei '[mokos_alarmierung.json](/mokos_alarmierung.json)'.
+Öffne diese, und importiere  die Datei '[mokos_alarmierung.json](/mokos_email/mokos_alarmierung.json)'.
 
-![Screenshot von MoKoS Alarmierung Einheit in Alamos](/mokos_alarmierung_einheit.png)
+![Screenshot von MoKoS Alarmierung Einheit in Alamos](/mokos_email/mokos_alarmierung_einheit.png)
 
 Passe diese Einheit nach deinen Alarmierungswünschen an.
 
 Der Alarm hat ein Feld für jede Alarmgruppe gesetzt, im Format _alarmgruppe_xyz_ (zB _alarmgruppe_strassenrettung_), jeweils mit dem Wert _true_ oder _false_.  
-[Komplette Liste der Gruppen](mokos_transform_json.bat#L45). 
+[Komplette Liste der Gruppen](mokos_email/mokos_transform_json.bat#L45). 
 
 Mit dem Whitelist-Plugin kann geprüft werden, ob diese Alarmgruppe alarmiert wurde, indem im Feld Wortliste der Wert _true_ eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert der Gruppe (zB _alarmgruppe_strassenrettung_).
 
