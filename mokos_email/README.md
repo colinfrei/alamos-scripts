@@ -77,6 +77,7 @@ Konfiguriere diesen mit folgenden Werten:
 - Reiter 'Einstellungen'
   - Version Datenformat: v2
   - Gültige Absender: Key aus Schritt 1 einfügen
+  - Checkbox _Patientendaten in Alarmaktualisierung einbeziehen_ ankreuzen (siehe technische Details unten)
 - Reiter 'Alarmierung'
   - Standard-Einheit 'MoKoS Alarmierung' wählen
 - Reiter 'HTTP'
@@ -84,12 +85,23 @@ Konfiguriere diesen mit folgenden Werten:
 - Reiter 'Erlaubte Einheiten'
   - Erlaubte Einheit 'MoKoS Alarmierung' ankreuzen
 
+## Technische Details
+### Patienten-Daten?
+Alamos [aktualisiert nur bestimmte Felder](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480366/Externe+Schnittstelle#Parameter%2C-die-f%C3%BCr-eine-Einsatzaktualisierung-ber%C3%BCcksichtigt-werden) in einem Alarm, und das Feld welches wir für die Alarmgruppen nutzen ist nicht dabei. Um trotzdem Aktualisierungen zu ermöglichen, werden die IDs der Alarmgruppen zusätzlich in die Patienteninfos gespeichert, da diese aktualisiert werden. 
+Die Liste der Alarmgruppen in Text-Form wird aktuell nicht aktualisiert
+
+### Matching in Einheit
+Da Alarmgruppen überlappende Namen haben können (zB _Kommandegruppe_ vs _Kommandogruppe 2_) kann das Whitelist-Plugin nicht nur mit dem Begriff verwendet werden. Stattdessen wird mit einer Regular Expression in diesem Format gematched: `(?:^|\r?\n)3(?=\r?\n|$)`
+
+Diese setzt sich zusammen aus:
+- `(?:^|\r?\n)` - Anfang der Zeile oder Anfang des Feld-Textes
+- `3` - ID der Alarmgruppe
+- `(?=\r?\n|$)` - Ende der Zeile oder Ende des Feld-Textes
 
 ## Weiteres
-- Anleitung geschrieben basierend auf Alamos Version 2.38.110
+- Anleitung geschrieben basierend auf Alamos Version 2.38.245
 - Offene Punkte:
   - Erkennen von Alarmübungen (AlertExercise?)
   - Erkennen von Nachalarmierungen (Alarmcount? // relevant?)
   - Spezielle Handhabung BMA
   - Objektdispositive?
-  - Weitere Alarmgruppen (MGV, ...)
