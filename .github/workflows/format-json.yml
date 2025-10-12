@@ -19,7 +19,7 @@ jobs:
 
     - name: Clean JSON pluginData and save to readable/
       run: |
-        for file in $(find mokos_sms mokos_email -type f -name "*.json"); do
+        for file in $(find mokos_sms mokos_email -type f -name "*.json" ! -path "*/readable/*"); do
           dir=$(dirname "$file")
           filename=$(basename "$file")
           output_dir="$dir/readable"
