@@ -104,4 +104,5 @@ Diese setzt sich zusammen aus:
   - Erkennen von Alarmübungen (AlertExercise?)
   - Erkennen von Nachalarmierungen (Alarmcount? // relevant?)
   - Spezielle Handhabung BMA
+  - Unwetteralarme
   - Objektdispositive?
