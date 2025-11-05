@@ -81,6 +81,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "} " ^
     "if ($otherOrgGroups) { $output.data.custom.alarmGroupsOther = ($otherOrgGroups -join \"`n\") } " ^
     "$jsonOut = $output | ConvertTo-Json -Depth 10 -Compress; " ^
-    "Invoke-RestMethod -Uri 'http://127.0.0.1:83/rest/external/http/alarm/v2' -Method POST -Body $jsonOut -ContentType 'application/json'"
+    "$utf8Bytes = [System.Text.Encoding]::UTF8.GetBytes($jsonOut); " ^
+    "Invoke-RestMethod -Uri 'http://127.0.0.1:83/rest/external/http/alarm/v2' -Method POST -Body $utf8Bytes -ContentType 'application/json; charset=utf-8'"
 
 endlocal
