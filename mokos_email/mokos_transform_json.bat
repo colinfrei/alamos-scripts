@@ -26,13 +26,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "    timestamp = $data.AlarmStart; " ^
     "    sender = 'KNZ'; " ^
     "    authorization = $authKey; " ^
-    "    data = @{ " ^
+    "    data = [ordered]@{ " ^
     "        externalId = $data.AlarmId; " ^
     "        keyword = $data.AlertType; " ^
     "        keyword_description = $data.ObjectName; " ^
     "        keyword_misc = ''; " ^
     "        message = @($data.PagerText); " ^
-    "        location = @{ " ^
+    "        location = [ordered]@{ " ^
     "            coordinate = @($data.Coordinate | Where-Object { $_.System -eq 'WGS84' } | ForEach-Object { $_.East; $_.North }); " ^
     "            building = ''; " ^
     "            building_id = ''; " ^
@@ -49,7 +49,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "            remark = 'Pseudo-Patient fuer Alarmgruppen'; " ^
     "            patientNumber = ''; " ^
     "        }); " ^
-    "        custom = @{ " ^
+    "        custom = [ordered]@{ " ^
     "            pagerText = $data.PagerText; " ^
     "            knzAlarmTime = $data.AlarmStart; " ^
     "            lv95_east = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty East); " ^
