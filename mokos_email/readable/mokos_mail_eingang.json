@@ -1,5 +1,5 @@
 {
-  "exportVersion": "2.38.110-STABLE",
+  "exportVersion": "2.38.270-STABLE",
   "nodes": [
     {
       "nodes": [
@@ -640,7 +640,7 @@
         {
           "key": "encoding",
           "label": "UTF-8 Encoding",
-          "value": false,
+          "value": true,
           "type": "CHECKBOX"
         }
       ],
