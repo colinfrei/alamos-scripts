@@ -108,6 +108,10 @@ Diese setzt sich zusammen aus:
   - Objektdispositive?
 
 ## Changelog
+### 2025-12-12: Alarme ohne Koordinaten
+Alarme ohne Koordinaten (zB Probealarm) werden jetzt korrekt gehandhabt.
+Um zu aktualisieren muss
+- die `mokos_transform_json.bat` Datei ersetzt werden
 ### 2025-11-05: UTF-8 Verbesserung
 Bessere Handhabung von UTF-8, damit Wörter wie 'Abklärung' korrekt verarbeitet werden.
 Um zu aktualisieren muss
