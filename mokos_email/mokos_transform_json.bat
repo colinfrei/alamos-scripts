@@ -52,8 +52,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "        custom = [ordered]@{ " ^
     "            pagerText = $data.PagerText; " ^
     "            knzAlarmTime = $data.AlarmStart; " ^
-    "            lv95_east = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty East); " ^
-    "            lv95_north = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty North); " ^
+    "            lv95_east = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty East) -or ''; " ^
+    "            lv95_north = ($data.Coordinate | Where-Object { $_.System -eq 'LV95' } | Select-Object -ExpandProperty North) -or ''; " ^
     "            alarmGroups = ''; " ^
     "            alarmGroupIds = ''; " ^
     "            alarmGroupsOther = '' " ^
