@@ -1,0 +1,48 @@
+{
+  "AlarmId": 1076440,
+  "AlarmCount": 1,
+  "Country": "CH",
+  "State": "AG",
+  "Language": "de-CH",
+  "DispatcherMode": 0,
+  "AlarmStart": "2026-01-11T11:38:48+0100",
+  "ZipCode": "",
+  "City": "Seon",
+  "Street": "Ortsgebiet Seon",
+  "StreetNr": "",
+  "ObjectName": "",
+  "AlertType": "Abklärung",
+  "AlertSubType": "Unwetter",
+  "AlertNotice": "",
+  "AlertLevel": "",
+  "AlertExercise": 0,
+  "BMANr": "",
+  "BMAKri": "",
+  "PagerText": "Abklärung, in Seon, Ortsgebiet Seon, ",
+  "Caller": "Tel +41765551234",
+  "AlarmMapLink": "http://maps.google.ch/maps?q=47.3514,8.1455",
+  "Organisations": [
+    {
+      "Groups": [
+        {
+          "Name": "Konferenzgespräch",
+          "Id": "6"
+        }
+      ],
+      "Name": "FW Seon-Egliswil",
+      "Id": "755"
+    }
+  ],
+  "Coordinate": [
+    {
+      "System": "LV95",
+      "North": 1244746,
+      "East": 2653409
+    },
+    {
+      "System": "WGS84",
+      "North": 47.3513997974964,
+      "East": 8.14549567331556
+    }
+  ]
+}
