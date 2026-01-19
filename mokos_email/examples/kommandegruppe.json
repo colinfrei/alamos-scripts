@@ -1,0 +1,48 @@
+{
+  "AlarmId": 1076435,
+  "AlarmCount": 1,
+  "Country": "CH",
+  "State": "AG",
+  "Language": "de-CH",
+  "DispatcherMode": 0,
+  "AlarmStart": "2026-01-10T22:06:29+0100",
+  "ZipCode": "",
+  "City": "Seon",
+  "Street": "Vorderbergstrasse",
+  "StreetNr": "",
+  "ObjectName": "Waldhütte",
+  "AlertType": "Techn. Hilfeleistung",
+  "AlertSubType": "Unwetter",
+  "AlertNotice": "Waldhütte",
+  "AlertLevel": "",
+  "AlertExercise": 0,
+  "BMANr": "",
+  "BMAKri": "",
+  "PagerText": "Techn. Hilfeleistung, in Seon, Vorderbergstrasse, Waldhütte, Baum über Strasse.",
+  "Caller": "Tel +41795554321",
+  "AlarmMapLink": "http://maps.google.ch/maps?q=47.3427,8.1436",
+  "Organisations": [
+    {
+      "Groups": [
+        {
+          "Name": "Kommandogruppe",
+          "Id": "3"
+        }
+      ],
+      "Name": "FW Seon-Egliswil",
+      "Id": "755"
+    }
+  ],
+  "Coordinate": [
+    {
+      "System": "LV95",
+      "North": 1243779,
+      "East": 2653275
+    },
+    {
+      "System": "WGS84",
+      "North": 47.3427134420481,
+      "East": 8.14360738194497
+    }
+  ]
+}

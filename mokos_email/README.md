@@ -98,6 +98,14 @@ Diese setzt sich zusammen aus:
 - `3` - ID der Alarmgruppe
 - `(?=\r?\n|$)` - Ende der Zeile oder Ende des Feld-Textes
 
+### Beispiel-Alarme
+Im Ordner _examples_ sind verschiedene Beispiele von Anhängen der MoKoS-Email abgelegt. Sie sind hier für bessere Lesbarkeit schön formatiert, im tatsächlichen Email fehlen die Zeilenumbrüche und Einrückungen.
+Beispiele (u.A.):
+- `probealarm.json` - mehrere Gruppen, ohne Caller, ohne Koordinaten
+- `kommandogruppe.json` - Pagertext enthält auch Textbausteine die sonst nicht vorkommen ('Baum über Strasse')
+- TODO: Nachbarfeuerwehr
+- TODO: Nachalarmierung
+
 ## Weiteres
 - Anleitung geschrieben basierend auf Alamos Version 2.38.245
 - Offene Punkte:
