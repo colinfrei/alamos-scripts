@@ -1,0 +1,49 @@
+{
+  "AlarmId": 1076519,
+  "AlarmCount": 1,
+  "Country": "CH",
+  "State": "AG",
+  "Language": "de-CH",
+  "DispatcherMode": 0,
+  "AlarmStart": "2026-01-15T18:45:05+0100",
+  "ZipCode": "",
+  "City": "",
+  "Street": "",
+  "StreetNr": "",
+  "ObjectName": "",
+  "AlertType": "Probealarm",
+  "AlertSubType": "",
+  "AlertNotice": "",
+  "AlertLevel": "",
+  "AlertExercise": 0,
+  "BMANr": "",
+  "BMAKri": "",
+  "PagerText": "Probealarm, FW Seon-Egliswil,",
+  "Caller": "Tel {}",
+  "AlarmMapLink": "",
+  "Organisations": [
+    {
+      "Groups": [
+        {
+          "Name": "Gruppe 1",
+          "Id": "1"
+        },
+        {
+          "Name": "Gruppe 2",
+          "Id": "2"
+        },
+        {
+          "Name": "Gruppe 3",
+          "Id": "50"
+        },
+        {
+          "Name": "Gruppe 4",
+          "Id": "111"
+        }
+      ],
+      "Name": "FW Seon-Egliswil",
+      "Id": "755"
+    }
+  ],
+  "Coordinate": []
+}
