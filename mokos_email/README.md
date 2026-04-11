@@ -61,7 +61,7 @@ Mit dem Whitelist-Plugin kann geprüft werden, ob eine Alarmgruppe alarmiert wur
 Füge in Alamos, unter 'Administration -> Alarmeingang', einen neuen Alarmeingang vom Typ [Mail-Überwachung](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480356/Mail-+berwachung) hinzu.
 Konfiguriere diesen, neben der Konfiguration der Email-Daten, mit folgenden Werten:
 - Reiter 'Sicherheit'
-  - Erlaubte Absender-Email: 'kfa@die-agv.ch' eintragen
+  - Erlaubte Absender-Email: 'feuerwehralarmstelle@kapo.ag.ch' (bis 20.4.2026: 'kfa@die-agv.ch') eintragen
 - Reiter 'Alarmierung'
   - Standard-Einheit 'MoKoS Mail-Eingang' wählen
   - Zu alarmierende Einheit wählen: Über Betreff
