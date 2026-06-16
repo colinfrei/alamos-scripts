@@ -21,7 +21,12 @@ Lege die angepasste Datei auf dem Alamos-Server ab, im Ordner _C:\ProgramData\Al
 
 Je nach Alamos-Setup muss der HTTP-Aufruf am Ende des Batch Files angepasst werden (zB Port).
 
-### 3. Mail-Verarbeitungs Einheit erstellen
+### 3. Aktivieren der Nutzung von Batch Scripts
+In Alamos muss die Nutzung von Batch Scripts aktiviert werden. Dies kann gemacht werden, indem unter `Administration -> Sonstiges` die Checkbox neben `Verwendung vom Plugin 'Batch/Shell-Skripte' erlauben` angekreuzt wird
+
+![Screenshot von Batch/Shell Skript-Einstellung in Alamos](/mokos_email/mokos_batch_setting.png)
+
+### 4. Mail-Verarbeitungs Einheit erstellen
 Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Mail-Eingang' an.
 Öffne diese, und importiere die Datei '[mokos_mail_eingang.json](/mokos_email/mokos_mail_eingang.json)'.
 
@@ -29,7 +34,7 @@ Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Mail-E
 
 Je nach Alamos-Setup müssen ggf. die Pfade unter 'Datei einlesen' und 'Batch/Shell-Skripte' angepasst werden.
 
-### 4. Alarmierungs-Einheit erstellen
+### 5. Alarmierungs-Einheit erstellen
 Lege in Alamos, unter 'Einheiten', eine neue Einheit mit dem Namen 'MoKoS Alarmierung' an.
 Öffne diese, und importiere  die Datei '[mokos_alarmierung.json](/mokos_email/mokos_alarmierung.json)'.
 
@@ -57,7 +62,7 @@ Zusätzlich werden im Feld `alarmGroupsOther` die aufgebotenen Gruppen der Nachb
 
 Mit dem Whitelist-Plugin kann geprüft werden, ob eine Alarmgruppe alarmiert wurde, indem im Feld Wortliste die ID der Gruppe eingetragen wird, und im Feld 'Quelle' im Tab 'Optionales' der Wert _alarmGroupsIds_.
 
-### 5. Anlegen Mail-Alarmeingang
+### 6. Anlegen Mail-Alarmeingang
 Füge in Alamos, unter 'Administration -> Alarmeingang', einen neuen Alarmeingang vom Typ [Mail-Überwachung](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480356/Mail-+berwachung) hinzu.
 Konfiguriere diesen, neben der Konfiguration der Email-Daten, mit folgenden Werten:
 - Reiter 'Sicherheit'
@@ -71,7 +76,7 @@ Konfiguriere diesen, neben der Konfiguration der Email-Daten, mit folgenden Wert
 - Reiter 'Erlaubte Einheiten'
   - Erlaubte Einheit 'MoKos Mail-Eingang' ankreuzen
 
-### 6. Anlegen Schnittstelle-Alarmeingang
+### 7. Anlegen Schnittstelle-Alarmeingang
 Füge in Alamos, unter 'Administration -> Alarmeingang', einen neuen Alarmeingang vom Typ [Externe Schnittstelle](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480366/Externe+Schnittstelle) hinzu.
 Konfiguriere diesen mit folgenden Werten:
 - Reiter 'Einstellungen'
@@ -116,6 +121,8 @@ Beispiele (u.A.):
   - Objektdispositive?
 
 ## Changelog
+### 2026-06-16 Hinweis auf Batch/Shell Skript Einstellung
+Seit Alamos [FE2 2.38.37](https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/3398369281/FE2+2.38) muss das Batch/Shell Skript Plugin global aktiviert werden, dies wurde in der Anleitung nachgeführt.
 ### 2025-12-12: Alarme ohne Koordinaten
 Alarme ohne Koordinaten (zB Probealarm) werden jetzt korrekt gehandhabt.
 Um zu aktualisieren muss
